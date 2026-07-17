@@ -32,3 +32,13 @@ yarn-error.log*
 
 *storybook.log
 .env
+
+# Graphify local cache
+/graphify-out/cache/
+
+# Graphify shared outputs
+/graphify-out/cache/
+/graphify-out/.graphify_*
+/graphify-out/manifest.json
+/graphify-out/memory/
+/graphify-out/reflections/
