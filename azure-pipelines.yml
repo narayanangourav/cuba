@@ -11,47 +11,70 @@ pr:
     include:
       - tooling
 
-pool:
-  vmImage: ubuntu-latest
+variables:
+  NPM_CONFIG_CACHE: '$(Pipeline.Workspace)/.npm'
 
-steps:
-  - checkout: self
-    displayName: Checkout repository
-    clean: true
-    fetchDepth: 1
+stages:
+  - stage: Quality
+    displayName: Quality validation
 
-  - task: UseNode@1
-    displayName: Use Node.js 24.x
-    inputs:
-      version: '24.x'
-      checkLatest: false
+    jobs:
+      - job: Validate
+        displayName: Validate source code
 
-  - script: |
-      node --version
-      npm --version
-    displayName: Verify Node.js and npm
+        pool:
+          vmImage: ubuntu-latest
 
-  - script: npm ci --no-audit --no-fund
-    displayName: Install locked dependencies
+        steps:
+          - checkout: self
+            displayName: Checkout repository
+            clean: true
+            fetchDepth: 1
 
-  - script: npx tsc -p tsconfig.build.json
-    displayName: TypeScript validation
+          - task: UseNode@1
+            displayName: Use Node.js 24.x
+            inputs:
+              version: '24.x'
+              checkLatest: false
 
-  - script: npm run lint
-    displayName: ESLint validation
+          - script: |
+              node --version
+              npm --version
+            displayName: Verify Node.js and npm
 
-  - script: npx prettier --check "src/**/*.{js,jsx,ts,tsx,css,json,md}"
-    displayName: Prettier validation
+          - script: mkdir -p "$(NPM_CONFIG_CACHE)"
+            displayName: Prepare npm cache directory
 
-  - script: npm test -- --watchAll=false --runInBand --coverage
-    displayName: Jest tests with coverage
-    env:
-      CI: 'true'
+          - task: Cache@2
+            displayName: Restore npm download cache
+            inputs:
+              key: 'npm | "$(Agent.OS)" | package-lock.json'
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+                npm
+              path: '$(NPM_CONFIG_CACHE)'
 
-  - task: PublishCodeCoverageResults@2
-    displayName: Publish Jest code coverage
-    condition: succeededOrFailed()
-    inputs:
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
-      pathToSources: '$(System.DefaultWorkingDirectory)'
-      failIfCoverageEmpty: true
+          - script: npm ci --no-audit --no-fund
+            displayName: Install locked dependencies
+
+          - script: npx tsc -p tsconfig.build.json
+            displayName: TypeScript validation
+
+          - script: npm run lint
+            displayName: ESLint validation
+
+          - script: npx prettier --check "src/**/*.{js,jsx,ts,tsx,css,json,md}"
+            displayName: Prettier validation
+
+          - script: npm test -- --watchAll=false --runInBand --coverage
+            displayName: Jest tests with coverage
+            env:
+              CI: 'true'
+
+          - task: PublishCodeCoverageResults@2
+            displayName: Publish Jest code coverage
+            condition: succeededOrFailed()
+            inputs:
+              summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
+              pathToSources: '$(System.DefaultWorkingDirectory)'
+              failIfCoverageEmpty: true
