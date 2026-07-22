@@ -105,7 +105,7 @@ module.exports = {
   ],
   coverageDirectory: '<rootDir>/coverage',
   coverageProvider: 'v8',
-  coverageReporters: ['text', 'lcov', 'json-summary'],
+  coverageReporters: ['text', 'lcov', 'json-summary', 'cobertura'],
   coverageThreshold: {
     global: {
       branches: 0,

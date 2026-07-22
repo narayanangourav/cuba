@@ -47,3 +47,11 @@ steps:
     displayName: Jest tests with coverage
     env:
       CI: 'true'
+
+  - task: PublishCodeCoverageResults@2
+    displayName: Publish Jest code coverage
+    condition: succeededOrFailed()
+    inputs:
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
+      pathToSources: '$(System.DefaultWorkingDirectory)'
+      failIfCoverageEmpty: true
