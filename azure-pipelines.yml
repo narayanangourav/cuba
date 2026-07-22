@@ -78,3 +78,155 @@ stages:
               summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
               pathToSources: '$(System.DefaultWorkingDirectory)'
               failIfCoverageEmpty: true
+
+  - stage: BuildArtifacts
+    displayName: Build web and Android artifacts
+    dependsOn: Quality
+    condition: succeeded()
+
+    jobs:
+      - job: Build
+        displayName: Build web application and debug APK
+
+        pool:
+          vmImage: ubuntu-latest
+
+        steps:
+          - checkout: self
+            displayName: Checkout repository
+            clean: true
+            fetchDepth: 1
+
+          - task: UseNode@1
+            displayName: Use Node.js 24.x
+            inputs:
+              version: '24.x'
+              checkLatest: false
+
+          - task: JavaToolInstaller@0
+            displayName: Use Java 21
+            inputs:
+              versionSpec: '21'
+              jdkArchitectureOption: x64
+              jdkSourceOption: PreInstalled
+
+          - script: |
+              node --version
+              npm --version
+              java -version
+            displayName: Verify build tools
+
+          - script: mkdir -p "$(NPM_CONFIG_CACHE)"
+            displayName: Prepare npm cache directory
+
+          - task: Cache@2
+            displayName: Restore npm download cache
+            inputs:
+              key: 'npm | "$(Agent.OS)" | package-lock.json'
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+                npm
+              path: '$(NPM_CONFIG_CACHE)'
+
+          - script: npm ci --no-audit --no-fund
+            displayName: Install locked dependencies
+
+          - script: npm run build:android
+            displayName: Build web application and synchronize Android
+
+          - bash: |
+              set -eu
+
+              ANDROID_SDK_PATH="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-}}"
+
+              if [ -z "$ANDROID_SDK_PATH" ]; then
+                echo "ANDROID_HOME and ANDROID_SDK_ROOT are not configured."
+                exit 1
+              fi
+
+              SDKMANAGER="$(command -v sdkmanager || true)"
+
+              if [ -z "$SDKMANAGER" ]; then
+                SDKMANAGER="$ANDROID_SDK_PATH/cmdline-tools/latest/bin/sdkmanager"
+              fi
+
+              if [ ! -x "$SDKMANAGER" ]; then
+                echo "sdkmanager was not found."
+                exit 1
+              fi
+
+              yes | "$SDKMANAGER" \
+                --sdk_root="$ANDROID_SDK_PATH" \
+                --licenses >/dev/null
+
+              "$SDKMANAGER" \
+                --sdk_root="$ANDROID_SDK_PATH" \
+                "platform-tools" \
+                "platforms;android-36" \
+                "build-tools;36.0.0"
+
+              printf 'sdk.dir=%s\n' "$ANDROID_SDK_PATH" \
+                > android/local.properties
+
+              echo "Android SDK path: $ANDROID_SDK_PATH"
+            displayName: Prepare Android SDK 36
+
+          - bash: |
+              set -euo pipefail
+
+              rm -f android/app/key.jks
+
+              keytool -genkeypair \
+                -keystore android/app/key.jks \
+                -storetype JKS \
+                -storepass 123456 \
+                -keypass 123456 \
+                -alias key \
+                -keyalg RSA \
+                -keysize 2048 \
+                -validity 3650 \
+                -dname "CN=Azure Pipelines, OU=CI, O=Cuba, L=Bengaluru, ST=Karnataka, C=IN"
+
+              test -s android/app/key.jks
+
+              echo "Temporary CI debug keystore created."
+            displayName: Create temporary debug keystore
+
+          - bash: |
+              set -euo pipefail
+
+              chmod +x ./gradlew
+              ./gradlew --no-daemon --stacktrace assembleDebug
+            workingDirectory: '$(System.DefaultWorkingDirectory)/android'
+            displayName: Build Android debug APK
+
+          - bash: |
+              set -euo pipefail
+
+              test -f dist/index.html
+              test -d dist/assets
+              test -f android/app/build/outputs/apk/debug/app-debug.apk
+
+              echo "Web artifact file count:"
+              find dist -type f | wc -l
+
+              echo "Web artifact size:"
+              du -sh dist
+
+              echo "Android APK:"
+              ls -lh android/app/build/outputs/apk/debug/app-debug.apk
+            displayName: Verify generated artifacts
+
+          - task: PublishPipelineArtifact@1
+            displayName: Publish web artifact
+            inputs:
+              targetPath: '$(System.DefaultWorkingDirectory)/dist'
+              artifact: cuba-web
+              publishLocation: pipeline
+
+          - task: PublishPipelineArtifact@1
+            displayName: Publish debug APK
+            inputs:
+              targetPath: '$(System.DefaultWorkingDirectory)/android/app/build/outputs/apk/debug/app-debug.apk'
+              artifact: cuba-debug-apk
+              publishLocation: pipeline
