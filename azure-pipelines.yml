@@ -1,0 +1,49 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - tooling
+
+pr:
+  autoCancel: true
+  drafts: false
+  branches:
+    include:
+      - tooling
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    displayName: Checkout repository
+    clean: true
+    fetchDepth: 1
+
+  - task: UseNode@1
+    displayName: Use Node.js 24.x
+    inputs:
+      version: '24.x'
+      checkLatest: false
+
+  - script: |
+      node --version
+      npm --version
+    displayName: Verify Node.js and npm
+
+  - script: npm ci --no-audit --no-fund
+    displayName: Install locked dependencies
+
+  - script: npx tsc -p tsconfig.build.json
+    displayName: TypeScript validation
+
+  - script: npm run lint
+    displayName: ESLint validation
+
+  - script: npx prettier --check "src/**/*.{js,jsx,ts,tsx,css,json,md}"
+    displayName: Prettier validation
+
+  - script: npm test -- --watchAll=false --runInBand --coverage
+    displayName: Jest tests with coverage
+    env:
+      CI: 'true'
