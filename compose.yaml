@@ -1,0 +1,18 @@
+name: cuba
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: cuba-web:local
+
+    ports:
+      - '8080:8080'
+
+    restart: unless-stopped
+
+    labels:
+      org.opencontainers.image.source: https://github.com/narayanangourav/cuba
+      org.opencontainers.image.description: Cuba web application local container
