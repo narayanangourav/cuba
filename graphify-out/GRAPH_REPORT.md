@@ -1,21 +1,21 @@
-# Graph Report - cuba  (2026-07-17)
+# Graph Report - cuba  (2026-08-07)
 
 ## Corpus Check
-- 949 files · ~1,866,096 words
+- 952 files · ~1,843,583 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 8175 nodes · 20547 edges · 478 communities (281 shown, 197 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 1231 edges (avg confidence: 0.73)
+- 8198 nodes · 20569 edges · 483 communities (283 shown, 200 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 1230 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6961a132`
+- Built from commit: `e4b2b1e8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- ServiceApi
+- TableTypes
 - ApiHandler
 - SupabaseApi
 - RoleType
@@ -26,28 +26,27 @@
 - e
 - p-db425c95.entry.js
 - a
-- TableTypes
+- OneRosterApi
 - FirebaseApi
 - .getCurrentStudent
 - useLearningPath.ts
 - N
 - .getI
-- UsersPage.tsx
-- constants.ts
-- PAGES
-- .executeQuery
+- logger
+- Home.tsx
+- schoolUtil.ts
 - ParentWhatsappInvitationPageService.ts
-- Capacitor
+- checkForUpdate
 - recommend.ts
 - SqliteApi.ts
-- Parent.tsx
+- constants.ts
 - MigrateSchoolsPageLogic.ts
 - scoreCardLogic.ts
 - App.tsx
 - CampaignMessagesLogic.ts
 - SupabaseApi.ts
-- r
-- Filesystem
+- U
+- EVENTS
 - CampaignsOverviewLogic.ts
 - FirebaseApi.ts
 - CampaignSetupPage.tsx
@@ -65,34 +64,34 @@
 - PopupConfig
 - palUtil.ts
 - AudioUtil
-- OneRosterApi.ts
+- Result
 - ServiceApi.ts
 - types.ts
 - ClassSection.stories.ts
 - useCampaignSetupForm.ts
 - devDependencies
-- ChapterWiseLessons.tsx
+- SelectIconImage.tsx
 - User
 - CampaignReviewStep.tsx
-- background.worker.ts
+- TabType
 - Util
 - compilerOptions
-- HomeworkPathway.tsx
+- HomeworkPathwayStructure.tsx
 - mediaCompression.worker.ts
 - PortPlugin
 - compare_import_json.py
-- value
+- SelectedFilters.tsx
 - EnumType
 - termsAndConditions.ts
 - dependencies
 - AvatarObj
-- CreateSelectedAssignment.tsx
+- TeacherAssignment.tsx
 - useSchoolListExport.ts
-- background.worker.types.ts
-- d
+- background.worker.ts
+- ce
 - ClassDetailsPageUtils.ts
 - Button.stories.ts
-- useStreakPageLogic
+- streakPage.tsx
 - SvgHelpers.ts
 - Sidebar.stories.tsx
 - CampaignMessages.test.tsx
@@ -101,7 +100,7 @@
 - schoolSearchUtil.ts
 - TABLES
 - StudentProfile.stories.tsx
-- .runDownloadZipBundle
+- Capacitor
 - SchoolCheckInModal.tsx
 - studentContactNumbers.ts
 - FirebaseAuth
@@ -114,26 +113,25 @@
 - getCachedImageSrc
 - CompactTimePickerField.tsx
 - OneRosterAuth
-- backgroundWorkerClient.ts
+- courseConstants.ts
 - MainActivity
 - FcInteractPopUp.tsx
-- ColoringBoard.test.tsx
-- TextField
-- PaginatedResponse
+- value
+- CampaignSavedAudienceGroup
 - NoteDetailsDrawer.tsx
 - StickerBook.test.tsx
-- ColoringBoard.tsx
+- ColoringBoard.test.tsx
 - ActionMenu.tsx
 - scripts
-- SchoolClassMetrics.tsx
+- SchoolClass.tsx
 - SchoolRoleMap
 - ExpandedTable.tsx
-- HomeworkPathwayStructure.tsx
-- usePathwaySVG.ts
+- .stopAudioUrlOrTtsPlayback
+- extractStickerSvg
 - index.tsx
 - CampaignAssignmentOptions
 - SchoolStudents.stories.tsx
-- Tt
+- r
 - LeaderboardInfo
 - StickerBookPreviewStage.tsx
 - LiveQuizRoomObject
@@ -144,12 +142,11 @@
 - manifest.json
 - StudentAPIResponse
 - OpsGenericPopup.test.tsx
-- SchoolTeachers.tsx
+- SchoolTeachers
 - CampaignListing.test.tsx
 - DisplayChapters.test.tsx
-- .prefetchLidoCommonAudioAfterSync
 - Class
-- OpsModulePage.tsx
+- OpsModulePage.test.tsx
 - LiveQuizCountdownTimer.stories.ts
 - FileReceiver
 - Parent.test.tsx
@@ -158,7 +155,7 @@
 - SchoolClass.test.tsx
 - nativeRuntime.ts
 - TeacherProfileSection.stories.ts
-- CreateSelectedAssignment
+- requireTeacherModeAuth
 - package.json
 - CommonAppBar.tsx
 - Auth
@@ -174,15 +171,15 @@
 - .logEvent
 - SchoolTeachers.test.tsx
 - CampaignSetupPage.test.tsx
-- useCampaignMessagesController
+- CampaignMessages.tsx
 - Activity
 - babel-plugin-logger-metadata.js
 - update_import_json.py
-- palUtil
+- HomeworkCompleteModal.tsx
 - DashboardTable.tsx
 - ExpandedTable.stories.ts
 - ExpandedUser.stories.ts
-- StickerBookPreviewModal.logic.ts
+- StickerBookPreviewModal.tsx
 - School
 - FileErrorComponent.stories.ts
 - SchoolStudents.tsx
@@ -197,13 +194,13 @@
 - PortPlugin
 - RequestTypes
 - STATUS
-- ColorPalette.tsx
+- ColorPalette.test.tsx
 - backButtonRegistry.ts
 - StickerBookPreviewModal.test.tsx
 - AddEditDeleteFab.tsx
 - GenericPopUpManager.test.ts
 - data_adder_with_firestore_ids.py
-- SchoolTeachers.stories.tsx
+- getProgressCourse
 - EditClassField.stories.ts
 - ProfileSection.stories.ts
 - useKidsAppLocationAccess.test.ts
@@ -211,14 +208,14 @@
 - growthbook-react.ts
 - background.worker.test.ts
 - LidoAvatar
-- xlsx
+- NavigationHandler.ts
 - FilteredSchoolsForSchoolListingOps
 - StickerBookCompletionModal.tsx
 - StartEndDateSelect.tsx
-- useTeacherAuthentication.ts
+- TeacherAuthenticationPopup.tsx
 - TeacherHeader.stories.ts
 - HeaderTab.stories.tsx
-- CampaignsOverviewWidgets.tsx
+- SchoolList.export.ts
 - SchoolCoordinators.stories.tsx
 - StudentReportHeader.tsx
 - GroupWiseStudents.stories.tsx
@@ -239,18 +236,18 @@
 - SchoolPrincipals.stories.tsx
 - AssignmentNextButton.tsx
 - ClassSummaryInfoPopup.tsx
-- .courseId
+- TableRightHeader.stories.ts
 - EditSchoolSection.tsx
 - DisplayClasses.stories.tsx
 - AssignmentCount.stories.ts
 - SchoolUserDetail.stories.ts
-- zc
+- CampaignMessagingQueryParams
 - check_sum_generator.js
 - LeaderboardRewardsType
 - SearchSchoolsParams
-- LessonIcon.tsx
-- CampaignCommunicationRow.test.tsx
-- useImportJsonForCurriculum
+- Compact Codex task prompts
+- database.ts
+- GenericPopUp.tsx
 - userTabs.stories.ts
 - SchoolDetail.tsx
 - SwitchSchool.tsx
@@ -259,29 +256,29 @@
 - useNativeAppListeners.ts
 - DashboardTable.stories.ts
 - FormCard.tsx
-- StreakCalendarSection.tsx
+- scoreCardLogic.test.ts
 - SubjectSelection.stories.tsx
 - graphify reference: extra exports and benchmark
 - vite-compat.d.ts
 - mediaCompression.worker.test.ts
 - ExampleInstrumentedTest.java
-- useStickerBookSave
+- ScoreCardProgressRows.tsx
 - SelectWithIcons.tsx
-- buildStatementsForRows
-- StudentProgressHeader.tsx
+- Graphify setup and maintenance
+- SchoolTab.stories.ts
 - growthbookCacheRestore.ts
 - ContactFormSection.tsx
 - UploadButton.stories.ts
 - Breadcrumb.stories.ts
 - SearchAndFilter.stories.tsx
 - UsersPage.stories.tsx
-- useLearningPath
+- capacitor-biometric-auth.ts
 - SchoolProfileContent.stories.ts
 - palau-recommendation.ts
 - i18next.ts
 - ExampleUnitTest.java
 - gradlew
-- RemoteConfig
+- GeoDataParams
 - SchoolSection.stories.ts
 - TeachersStudentDisplay.tsx
 - DropdownField.tsx
@@ -290,17 +287,17 @@
 - ClassTabs.stories.ts
 - ProgramDetailsPage.tsx
 - ProgramPage.stories.ts
-- SchoolListItem.tsx
+- PaintTopBar.tsx
 - AddStudent.stories.tsx
 - ClassProfile.stories.tsx
 - EditClass.stories.tsx
-- ChapterContainer.tsx
+- PathwayModal.tsx
 - EditSchool.stories.tsx
 - ManageSchools.stories.tsx
 - SideMenu.stories.ts
 - ClassUsers.stories.tsx
 - UserProfile.stories.tsx
-- FirebaseAnalytics
+- StickerBookActions.tsx
 - LoginWithEmail.tsx
 - LoginWithStudentID.tsx
 - OtpVerification.tsx
@@ -314,11 +311,10 @@
 - Dependencies
 - @algolia/autocomplete-plugin-recent-searches
 - @algolia/autocomplete-theme-classic
-- algoliasearch
+- AssignmentDateRangeData
 - @aparajita/capacitor-biometric-auth
 - @awesome-cordova-plugins/background-mode
-- babel-jest
-- SchoolNotes.tsx
+- imageDropdown.tsx
 - @capacitor/app
 - @capacitor/browser
 - @capacitor/cli
@@ -326,7 +322,6 @@
 - AppOverlays.tsx
 - @capacitor-community/sqlite
 - capacitor.config.ts
-- CoordinatorAPIResponse
 - @capacitor/filesystem
 - @capacitor-firebase/authentication
 - @capacitor-firebase/messaging
@@ -351,7 +346,7 @@
 - dayjs
 - @emotion/react
 - @emotion/styled
-- CreateSchoolPrompt.tsx
+- NewBackButton.tsx
 - eslint-config-react-app
 - graphify reference: add a URL and watch a folder
 - @ffmpeg/ffmpeg
@@ -391,13 +386,14 @@
 - react-router-dom
 - react-share
 - react-spinners
+- StickerBookSaveModal.tsx
 - @reduxjs/toolkit
 - @rive-app/react-canvas
 - rive-react
 - @sentry/capacitor
 - @sentry/react
 - @splidejs/react-splide
-- CACHETABLES
+- ProgramDetailsPage.stories.tsx
 - styled-components
 - @supabase/supabase-js
 - uuid
@@ -410,14 +406,13 @@
 - workbox-google-analytics
 - workbox-navigation-preload
 - workbox-precaching
-- FCSchoolStats
 - workbox-routing
 - workbox-strategies
 - workbox-streams
 - xlsx-js-style
 - zip2
 - prettier
-- .getInstance
+- StickerBookBoard.test.tsx
 - graphify reference: GitHub clone and cross-repo merge
 - storybook
 - @storybook/react-vite
@@ -429,6 +424,7 @@
 - @types/react-router
 - typescript
 - vite
+- finalizeFirstRenderNativeRuntime
 - install.sh
 - barcode-scanner.ts
 - browser.ts
@@ -443,7 +439,7 @@
 - FileUpload.stories.ts
 - TeacherStudentsDisplay.stories.ts
 - TeacherAssignment.stories.tsx
-- AGENTS.md
+- Repository policy
 - axios
 - @capacitor-community/http
 - @capacitor/device
@@ -463,6 +459,10 @@
 - @testing-library/jest-dom
 - @testing-library/react
 - @types/node
+- SchoolList.stories.ts
+- SKILL.md
+- @algolia/autocomplete-plugin-query-suggestions
+- eslint-plugin-prettier
 
 ## God Nodes (most connected - your core abstractions)
 1. `TableTypes` - 925 edges
@@ -477,168 +477,164 @@
 10. `OneRosterApi` - 161 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `GenderAndAge()` --indirect_call--> `value()`  [INFERRED]
-  src/components/editStudent/GenderAndAge.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
+- `LoginWithPhone()` --indirect_call--> `value()`  [INFERRED]
+  src/components/signup/LoginWithPhone.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
+- `FilterSlider()` --indirect_call--> `value()`  [INFERRED]
+  src/ops-console/components/FilterSlider.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
 - `ProgramListTable()` --indirect_call--> `value()`  [INFERRED]
   src/ops-console/components/ProgramListTable.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
 - `FormCard()` --indirect_call--> `value()`  [INFERRED]
   src/ops-console/components/SchoolDetailsComponents/FormCard.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
-- `mockTranslate()` --indirect_call--> `value()`  [INFERRED]
-  src/pages/LoginScreen.test.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
-- `AddStudentSection()` --indirect_call--> `value()`  [INFERRED]
-  src/teachers-module/components/AddStudentSection.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
+- `SelectedFilters()` --indirect_call--> `value()`  [INFERRED]
+  src/ops-console/components/SelectedFilters.tsx → public/Lido-player-code-versions/0.0.0-beta-12/p-Dq-Z8Dx0.js
 
 ## Import Cycles
-- 3-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/models/User.ts`
-- 3-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolDetailsTabsComponent.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx`
-- 3-file cycle: `src/components/learningPathway/StickerBookPreviewModal.logic.ts -> src/utility/util.ts -> src/components/learningPathway/StickerBookPreviewModal.tsx -> src/components/learningPathway/StickerBookPreviewModal.logic.ts`
-- 3-file cycle: `src/common/eventBaseContext.ts -> src/utility/schoolUtil.ts -> src/utility/util.ts -> src/common/eventBaseContext.ts`
-- 3-file cycle: `src/models/CurriculumController.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/models/CurriculumController.ts`
-- 3-file cycle: `src/components/animation/Avatar.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/components/animation/Avatar.tsx`
 - 3-file cycle: `src/ops-console/pages/NewUserPageOps.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/ops-console/pages/NewUserPageOps.tsx`
-- 3-file cycle: `src/ops-console/pages/SchoolDetailsPage.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/ops-console/pages/SchoolDetailsPage.tsx`
+- 3-file cycle: `src/common/eventBaseContext.ts -> src/utility/schoolUtil.ts -> src/utility/util.ts -> src/common/eventBaseContext.ts`
+- 3-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolDetailsTabsComponent.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx`
 - 3-file cycle: `src/components/animation/Avatar.tsx -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/components/animation/Avatar.tsx`
 - 3-file cycle: `src/components/animation/Avatar.tsx -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/components/animation/Avatar.tsx`
-- 4-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/models/User.ts`
-- 4-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/services/api/ServiceApi.ts -> src/models/User.ts`
+- 3-file cycle: `src/models/CurriculumController.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/models/CurriculumController.ts`
+- 3-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/models/User.ts`
+- 3-file cycle: `src/components/animation/Avatar.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/components/animation/Avatar.tsx`
+- 3-file cycle: `src/ops-console/pages/SchoolDetailsPage.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/ops-console/pages/SchoolDetailsPage.tsx`
+- 3-file cycle: `src/components/learningPathway/StickerBookPreviewModal.logic.ts -> src/utility/util.ts -> src/components/learningPathway/StickerBookPreviewModal.tsx -> src/components/learningPathway/StickerBookPreviewModal.logic.ts`
+- 4-file cycle: `src/ops-console/pages/NewUserPageOps.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/NewUserPageOps.tsx`
+- 4-file cycle: `src/ops-console/pages/NewUserPageOps.tsx -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/NewUserPageOps.tsx`
+- 4-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolCheckInModal.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolCheckInModal.tsx`
 - 4-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx -> src/services/api/ServiceApi.ts -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolDetailsTabsComponent.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx`
 - 4-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolDetailsTabsComponent.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolStudents.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx`
 - 4-file cycle: `src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx -> src/ops-console/pages/SchoolDetailsPage.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolDetailsTabsComponent.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolTeachers.tsx -> src/ops-console/components/SchoolDetailsComponents/SchoolClass.tsx`
-- 4-file cycle: `src/components/learningPathway/StickerBookPreviewModal.logic.ts -> src/hooks/useStickerBookSave.ts -> src/utility/util.ts -> src/components/learningPathway/StickerBookPreviewModal.tsx -> src/components/learningPathway/StickerBookPreviewModal.logic.ts`
-- 4-file cycle: `src/ops-console/pages/NewUserPageOps.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/NewUserPageOps.tsx`
-- 4-file cycle: `src/ops-console/pages/NewUserPageOps.tsx -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/NewUserPageOps.tsx`
-- 4-file cycle: `src/ops-console/pages/SchoolDetailsPage.tsx -> src/services/ServiceConfig.ts -> src/services/api/ApiHandler.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/SchoolDetailsPage.tsx`
-- 4-file cycle: `src/ops-console/pages/SchoolDetailsPage.tsx -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/services/api/ServiceApi.ts -> src/ops-console/pages/SchoolDetailsPage.tsx`
+- 4-file cycle: `src/components/animation/Avatar.tsx -> src/utility/util.ts -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/components/animation/Avatar.tsx`
+- 4-file cycle: `src/models/CurriculumController.ts -> src/utility/util.ts -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/models/CurriculumController.ts`
+- 4-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/ServiceConfig.ts -> src/services/api/OneRosterApi.ts -> src/models/User.ts`
+- 4-file cycle: `src/models/User.ts -> src/utility/util.ts -> src/services/api/OneRosterApi.ts -> src/services/api/ServiceApi.ts -> src/models/User.ts`
 
-## Communities (478 total, 197 thin omitted)
+## Communities (483 total, 200 thin omitted)
+
+### Community 0 - "TableTypes"
+Cohesion: 0.01
+Nodes (13): TableTypes, CourseDetails, CourseDetails, BadgeInfo, BonusInfo, stickerInfo, ServiceApi, CurriculumWithCourses (+5 more)
 
 ### Community 3 - "RoleType"
 Cohesion: 0.03
-Nodes (111): CommonToggleProps, CAMPAIGN_ACCESS_ROLES, CLASS_USERS, IconType, NavItems, OPS_ROLES, SCHOOL_USERS, SchoolWithRole (+103 more)
+Nodes (106): CommonToggleProps, CAMPAIGN_ACCESS_ROLES, CLASS_USERS, ContactTarget, IconType, ClassType, LearningObjective, LearningObjectiveResult (+98 more)
 
 ### Community 4 - "ServiceConfig"
-Cohesion: 0.02
-Nodes (91): PERFORMANCE_UI, PerformanceLevel, REQUEST_TABS, Props, mockPresentToast, DropdownMenuProps, ImageUrlCache, mockApi (+83 more)
+Cohesion: 0.03
+Nodes (84): PAGES, SCHOOL_USERS, SchoolWithRole, Props, mockApi, StudentAvatarStudent, mockHistory, mockSplidePropsSpy (+76 more)
 
 ### Community 5 - "p-B1uwYUL1.js"
 Cohesion: 0.02
-Nodes (105): _, aa(), Ad(), An(), at(), ax(), ba(), bi() (+97 more)
+Nodes (113): Ad(), An(), at(), ax(), bi(), bn(), bo(), Bt() (+105 more)
 
 ### Community 6 - "SelectMode.tsx"
-Cohesion: 0.03
-Nodes (61): storedStudent, ACTION_TYPES, AGE_OPTIONS, APP_LANGUAGES, AVATARS, EVENTS, FORM_MODES, GENDER (+53 more)
+Cohesion: 0.08
+Nodes (26): FileUploadStep, STAGES, TEACHER_APP_AUTH_METHODS, TEACHER_APP_USER_ROLES, InlineSvg(), InlineSvgProps, mergeSvgAttributes(), SelectModeButton() (+18 more)
 
 ### Community 8 - "e"
 Cohesion: 0.03
-Nodes (52): ci(), di(), li(), ti(), yi(), a(), aa(), Ae() (+44 more)
+Nodes (50): fS(), it(), Qi(), ti(), a(), aa(), Ae(), animatePathToEnd() (+42 more)
 
 ### Community 9 - "p-db425c95.entry.js"
 Cohesion: 0.03
-Nodes (119): AC(), it(), lS(), Qi(), rt(), uS(), Wt(), addEventListeners() (+111 more)
+Nodes (122): AC(), lS(), rt(), uS(), Wt(), addEventListeners(), addRulerNumbers(), addSpanToText() (+114 more)
 
 ### Community 10 - "a"
-Cohesion: 0.07
-Nodes (79): a(), b(), compile(), ds(), E, eg(), evaluate(), F() (+71 more)
-
-### Community 11 - "TableTypes"
-Cohesion: 0.02
-Nodes (11): TableTypes, CourseDetails, CourseDetails, BadgeInfo, BonusInfo, stickerInfo, OneRosterApi, CurriculumWithCourses (+3 more)
+Cohesion: 0.06
+Nodes (107): _, a(), aa(), ae(), b(), be(), br(), bS() (+99 more)
 
 ### Community 13 - ".getCurrentStudent"
-Cohesion: 0.05
-Nodes (29): LATEST_STARS(), StudentAvatar(), HomeHeader(), IconButton(), LeaderboardBonus(), ChapterLessonBox(), getSessionStorageItem(), setSessionStorageItem() (+21 more)
+Cohesion: 0.07
+Nodes (28): react-dom, react-dom, LATEST_STARS(), HomeworkPathwayStructure(), StudentAvatar(), DropdownMenu(), HomeHeader(), LeaderboardBonus() (+20 more)
 
 ### Community 14 - "useLearningPath.ts"
-Cohesion: 0.14
-Nodes (26): buildPath(), getAssignedAssessmentPath(), getCourseCodeBase(), getLastPlayedLesson(), getLessonListItemId(), getMathCourseGroupKey(), getMathCoursePreferenceScore(), getNextFromList() (+18 more)
+Cohesion: 0.05
+Nodes (57): LEARNING_PATHWAY_MODE, RECOMMENDATION_TYPE, DropdownMenuProps, ImageUrlCache, ChapterLessonBoxProps, mockApi, mockT, mockApi (+49 more)
 
 ### Community 15 - "N"
-Cohesion: 0.06
-Nodes (27): ah(), br(), Bt(), dd(), Dh(), ef(), et(), fa() (+19 more)
+Cohesion: 0.09
+Nodes (15): ah(), dd(), Dh(), fa(), _getCustomString(), ih(), N(), Nh() (+7 more)
 
 ### Community 16 - ".getI"
+Cohesion: 0.05
+Nodes (61): qr(), getBandTitleByColor(), LOWER_GRADE_MAPPING, LOWER_GRADE_STANDARDS, OPS_ROLES, getStreakTargetRect(), registerStreakRectResolver(), registerStreakRewardPulseHandler() (+53 more)
+
+### Community 17 - "logger"
 Cohesion: 0.04
-Nodes (47): qr(), SelectCourse(), LessonCard(), ProfileHeader(), ForgotPass(), SubjectCurriculumCard(), CampaignAssignmentTab(), OpsApprovedRequestDetails() (+39 more)
+Nodes (48): PERFORMANCE_UI, PerformanceLevel, REQUEST_TABS, FcActivity, BreadcrumbItem, BreadcrumbProps, Column, DataTableBody (+40 more)
 
-### Community 17 - "UsersPage.tsx"
-Cohesion: 0.40
-Nodes (5): RoleLabels, columns, useDebouncedValue(), User, UsersPage()
+### Community 18 - "Home.tsx"
+Cohesion: 0.05
+Nodes (41): ACTIVE_HEADER_ICON_CONFIGS, DEFAULT_HEADER_ICON_CONFIGS, HeaderIconConfig, HOMEHEADERLIST, PREVIOUS_SELECTED_COURSE(), SOURCE, ActivationLessonBannerProps, mockApi (+33 more)
 
-### Community 18 - "constants.ts"
+### Community 19 - "schoolUtil.ts"
 Cohesion: 0.03
-Nodes (77): ACTIVE_HEADER_ICON_CONFIGS, ALL_COURSES, AUTO_USER_ACTION_TYPES, CHAPTER_CARD_COLOURS, CocosCourseIdentifier, DEFAULT_HEADER_ICON_CONFIGS, DrawerOptions, FileUploadStep (+69 more)
-
-### Community 19 - "PAGES"
-Cohesion: 0.03
-Nodes (64): storedStudent, registerBackButtonHandler(), ACTION, COURSES, LANG, PAGES, OnlineOfflineHandlerResult, ToastOptions (+56 more)
+Nodes (54): registerBackButtonHandler(), ACTION, APP_LANGUAGES, GENDER, LANG, MODES, OnlineOfflineHandlerResult, ToastOptions (+46 more)
 
 ### Community 21 - "ParentWhatsappInvitationPageService.ts"
 Cohesion: 0.06
-Nodes (63): DataFrameCard(), ParentWhatsappInvitationPage(), TableColumn, actualPageLogicModule, createLogicState(), mockUseParentWhatsappInvitationPageLogic, renderPage(), Feedback (+55 more)
-
-### Community 22 - "Capacitor"
-Cohesion: 0.11
-Nodes (27): JoinClass(), ChimpleRiveMascot(), ChimpleRiveMascotProps, RiveMascotCanvas(), RiveMascotCanvasProps, checkForUpdate(), AssignmentPage(), waitForJoinRefresh() (+19 more)
+Nodes (64): DataFrameCard(), ParentWhatsappInvitationPage(), TableColumn, actualPageLogicModule, createLogicState(), mockUseParentWhatsappInvitationPageLogic, renderPage(), Feedback (+56 more)
 
 ### Community 23 - "recommend.ts"
-Cohesion: 0.08
-Nodes (57): buildPlayedAbilityResult(), canonicalPattern(), cleanup(), dedupeLatestResults(), existingNextPlayedRow(), fileExists(), filterSubjectLessonResults(), firstRecommendationHeader (+49 more)
+Cohesion: 0.07
+Nodes (66): buildFirstRecommendationRow(), buildNextRecommendationRow(), buildPlayedAbilityResult(), byId(), canonicalPattern(), cleanNumber(), cleanup(), csvCell() (+58 more)
 
 ### Community 24 - "SqliteApi.ts"
-Cohesion: 0.07
-Nodes (15): getDailyRewardClaimedEvent(), getPathwayStickerCollectedEvent(), PathwayStickerSource, MUTATE_TYPES, PROFILETYPE, RESULT_STATUS, AssignmentBatchGroupRow, AssignmentDateRangeData (+7 more)
+Cohesion: 0.06
+Nodes (14): CACHETABLES, CoordinatorAPIResponse, MUTATE_TYPES, RESULT_STATUS, AssignmentBatchGroupRow, CampaignCancellationDetails, ClassMetricsForClassListingRow, JoinClassInviteLookupResult (+6 more)
 
-### Community 25 - "Parent.tsx"
-Cohesion: 0.08
-Nodes (25): CACHE_TABLES_TO_CLEAR, PARENTHEADERLIST, School, TEACHER_AUTH_GATE_SOURCE_ENTRY_POINTS, TeacherAuthGateSourceEntryPoint, ClearCacheData(), clearCacheStorageJS(), clearLocalAndSession() (+17 more)
+### Community 25 - "constants.ts"
+Cohesion: 0.03
+Nodes (66): storedStudent, ACTION_TYPES, ALL_COURSES, AUTO_USER_ACTION_TYPES, CACHE_TABLES_TO_CLEAR, CHAPTER_CARD_COLOURS, CocosCourseIdentifier, DrawerOptions (+58 more)
 
 ### Community 26 - "MigrateSchoolsPageLogic.ts"
-Cohesion: 0.11
-Nodes (26): CommonPopup(), CommonPopupProps, MigrateSchoolsPage(), createLogicState(), mockUseMigrateSchoolsPageLogic, renderPage(), FILTER_KEYS, Filters (+18 more)
+Cohesion: 0.08
+Nodes (33): CommonPopup(), CommonPopupProps, FilterSlider(), FilterSliderProps, MigrateSchoolsPage(), createLogicState(), mockUseMigrateSchoolsPageLogic, renderPage() (+25 more)
 
 ### Community 27 - "scoreCardLogic.ts"
-Cohesion: 0.06
-Nodes (55): appendUniqueStickerId(), AwardedStickerContext, buildBaseStickerRow(), buildDailyRewardRow(), buildScoreCardProgressRows(), BuildScoreCardProgressRowsParams, buildStickerRow(), DailyRewardSnapshot (+47 more)
+Cohesion: 0.11
+Nodes (34): appendUniqueStickerId(), AwardedStickerContext, buildBaseStickerRow(), buildDailyRewardRow(), buildScoreCardProgressRows(), BuildScoreCardProgressRowsParams, buildStickerRow(), DailyRewardSnapshot (+26 more)
 
 ### Community 28 - "App.tsx"
-Cohesion: 0.14
-Nodes (20): handleClick(), initializeClickListener(), App(), AppRouteEffects(), AppRoutes(), flushPendingNavigationTargets(), PendingNavigationTarget, pendingNavigationTargets (+12 more)
+Cohesion: 0.21
+Nodes (12): handleClick(), initializeClickListener(), App(), AppRouteEffects(), AppRoutes(), useGlobalBrowserEffects(), useHotUpdate(), useOpsConsoleBodyClass() (+4 more)
 
 ### Community 29 - "CampaignMessagesLogic.ts"
-Cohesion: 0.10
-Nodes (39): addUtcDays(), applyScheduleTimeToDate(), areCampaignMessageRowsEqual(), areStringArraysEqual(), buildCampaignMessageSavePayload(), buildCampaignMessagesData(), CampaignMessagePoll, CampaignMessagesApiData (+31 more)
+Cohesion: 0.08
+Nodes (48): addUtcDays(), applyScheduleTimeToDate(), areCampaignMessageRowsEqual(), areStringArraysEqual(), buildCampaignMessageSavePayload(), buildCampaignMessagesData(), buildScheduleTimeText(), CampaignMessagePoll (+40 more)
 
 ### Community 30 - "SupabaseApi.ts"
+Cohesion: 0.06
+Nodes (44): PERCENTAGE_BAND_VALUES, AssessmentAssignmentRow, AssessmentAssignmentUserLink, AssessmentBatchLessonRow, AssessmentBatchRow, AssessmentResultRow, CAMPAIGN_LISTING_NATIVE_SORT_COLUMNS, CampaignAccessSchoolRow (+36 more)
+
+### Community 31 - "U"
 Cohesion: 0.05
-Nodes (49): PERCENTAGE_BAND, PERCENTAGE_BAND_VALUES, PercentageBandValue, ProgramType, SchoolPerformanceStatusValue, TabType, ProgramListingProgramRow, AssessmentAssignmentRow (+41 more)
+Nodes (27): ar(), ba(), compile(), cr, ef(), evaluate(), fr(), hg() (+19 more)
 
-### Community 31 - "r"
-Cohesion: 0.04
-Nodes (22): ai(), ar(), ca(), CC(), cr, fr(), ir(), lr (+14 more)
-
-### Community 32 - "Filesystem"
-Cohesion: 0.10
-Nodes (32): SelectIconImage(), HotUpdate(), activateRelease(), AppUpdater, buildReleaseFromBundle(), checkForDownloadedHotUpdate(), Checksum, ChecksumFile (+24 more)
+### Community 32 - "EVENTS"
+Cohesion: 0.05
+Nodes (39): storedStudent, getDailyRewardClaimedEvent(), getPathwayStickerCollectedEvent(), PathwayStickerSource, EVENTS, REFRESH_TABLES_ON_LOGIN, buildGlobalEventBaseContext(), getCurrentModeValue() (+31 more)
 
 ### Community 33 - "CampaignsOverviewLogic.ts"
-Cohesion: 0.09
-Nodes (33): CampaignsOverview(), CampaignsOverviewProps, addUtcDays(), buildCampaignsOverviewViewModel(), calculateCampaignCompletion(), CampaignListingStatus, CampaignsOverviewApiCancellationData, CampaignsOverviewApiData (+25 more)
+Cohesion: 0.08
+Nodes (45): CampaignsOverview(), CampaignsOverviewProps, addUtcDays(), buildCampaignsOverviewFields(), buildCampaignsOverviewMetrics(), buildCampaignsOverviewViewModel(), calculateCampaignCompletion(), CAMPAIGN_LISTING_STATUS (+37 more)
 
 ### Community 34 - "FirebaseApi.ts"
-Cohesion: 0.06
-Nodes (13): DEFAULT_SUBJECT_IDS, CocosLessonData, CollectionIds, StudentLessonResult, Badge, BaseObject, Curriculum, Grade (+5 more)
+Cohesion: 0.08
+Nodes (9): DEFAULT_SUBJECT_IDS, Badge, BaseObject, Curriculum, Grade, Language, Sticker, Subject (+1 more)
 
 ### Community 35 - "CampaignSetupPage.tsx"
-Cohesion: 0.10
-Nodes (34): CampaignCommunicationTimelineStep(), CampaignCommunicationTimelineStepProps, CampaignReachSummary, buildCampaignDurationLabel(), buildCampaignDurationTimelineDates(), buildCampaignMessagingPayload(), buildCommunicationTimelineDates(), buildTimeOptions() (+26 more)
+Cohesion: 0.09
+Nodes (36): CampaignCommunicationRow(), CampaignCommunicationRowProps, baseRow, createRow(), renderRow(), RenderRowProps, CampaignCommunicationTimelineStep(), CampaignCommunicationTimelineStepProps (+28 more)
 
 ### Community 36 - "ProgramPageLogic.ts"
 Cohesion: 0.08
-Nodes (48): react, react, DialogBoxButtons(), ProgramListControls(), buildNameCell(), ProgramPageContent(), buildProgramAppliedFilterLabels(), buildProgramExportMetadataRows() (+40 more)
+Nodes (46): ProgramPageContent(), buildPercentLabel(), buildProgramAppliedFilterLabels(), buildProgramExportMetadataRows(), buildProgramListRequest(), buildProgramMetricExportRow(), buildProgramMetricExportRows(), buildTextCell() (+38 more)
 
 ### Community 37 - "campaignAssignmentUtils.ts"
 Cohesion: 0.09
-Nodes (38): AssignmentConfigurationCard(), AssignmentConfigurationCardProps, AssignmentSummary(), AssignmentSummaryProps, CampaignAssignmentStep(), CampaignAssignmentStepProps, assignmentOptions, baseForm (+30 more)
+Nodes (37): AssignmentConfigurationCard(), AssignmentConfigurationCardProps, AssignmentSummary(), AssignmentSummaryProps, CampaignAssignmentStep(), CampaignAssignmentStepProps, assignmentOptions, baseForm (+29 more)
 
 ### Community 38 - "LoginScreen.test.tsx"
 Cohesion: 0.11
@@ -649,52 +645,48 @@ Cohesion: 0.17
 Nodes (5): CircularButtonProps, AddUserPopUpProps, UserRolesProps, Page, Story
 
 ### Community 40 - "campaignListingHelpers.ts"
-Cohesion: 0.07
-Nodes (40): CAMPAIGN_LISTING_STATUS, CAMPAIGN_STATUS, CampaignListingStatus, CampaignsOverviewInfoTooltip(), CampaignsOverviewInfoTooltipProps, buildCampaignListingRequest(), CampaignListingApiRequest, normalizeCampaignSearchTerm() (+32 more)
+Cohesion: 0.08
+Nodes (36): CAMPAIGN_LISTING_STATUS, CAMPAIGN_STATUS, CampaignListingStatus, IconButton(), CampaignsOverviewInfoTooltip(), CampaignsOverviewInfoTooltipProps, buildCampaignListingRequest(), CampaignListingApiRequest (+28 more)
 
 ### Community 41 - "SchoolList.helpers.tsx"
 Cohesion: 0.08
-Nodes (49): PERCENTAGE_BAND_META, PERCENTAGE_BAND_TRANSLATION_KEYS, PROGRAM_TAB, SCHOOL_LISTING_STATUS_META, SCHOOL_PERFORMANCE_STATUS, SCHOOL_PERFORMANCE_STATUS_VALUES, SCHOOL_PERFORMANCE_TRANSLATION_KEYS, NewProgram() (+41 more)
+Nodes (51): PERCENTAGE_BAND, PERCENTAGE_BAND_META, PERCENTAGE_BAND_TRANSLATION_KEYS, PercentageBandValue, PROGRAM_TAB, SCHOOL_LISTING_STATUS_META, SCHOOL_PERFORMANCE_STATUS, SCHOOL_PERFORMANCE_STATUS_VALUES (+43 more)
 
 ### Community 42 - "Lesson"
-Cohesion: 0.06
-Nodes (5): Chapter, Course, Lesson, recommendedText, Story
+Cohesion: 0.05
+Nodes (7): Chapter, HeaderIconConfig, StudentProgressHeader(), mockHistory, mockSetPathToBackButton, Course, Lesson
 
 ### Community 43 - "LiveQuizQuestion.tsx"
 Cohesion: 0.07
-Nodes (28): LiveQuizHeader(), LiveQuizQuestionResult, baseRoomDoc, mockApi, mockReplace, usersPayload, toRoomResults(), audiosMap (+20 more)
+Nodes (26): LiveQuizQuestionResult, baseRoomDoc, mockApi, mockReplace, usersPayload, audiosMap, mockApi, mockAudioLoad (+18 more)
 
 ### Community 44 - "SupabaseAuth"
-Cohesion: 0.10
-Nodes (3): SupabaseAuth, getErrorMessage(), isRecoverableStorageError()
+Cohesion: 0.09
+Nodes (8): DeleteParentAccount(), ParentLogout(), Sidebar(), AppLangSelection(), ResetPassword(), SupabaseAuth, getAuthDebugContext(), logAuthDebug()
 
 ### Community 45 - "SelectAvatar.stories.ts"
 Cohesion: 0.05
 Nodes (41): Avatar, Avatar10, Avatar11, Avatar12, Avatar13, Avatar14, Avatar15, Avatar16 (+33 more)
 
 ### Community 47 - "PopupConfig"
-Cohesion: 0.23
-Nodes (6): PopupManager, PopupConfig, TriggerType, PopupEventDetail, PopupLocalizedContent, useGenericPopup()
+Cohesion: 0.36
+Nodes (3): PopupManager, PopupConfig, useGenericPopup()
 
 ### Community 48 - "palUtil.ts"
-Cohesion: 0.12
-Nodes (19): AbilityKeys, BLEND_WEIGHT_KEYS, DEFAULT_BLEND_WEIGHTS, DEFAULT_LEARNING_RATES, ENGLISH_AND_MATHS_BLEND_WEIGHTS, ENGLISH_LEARNING_RATES, HINDI_LEARNING_RATES, LEARNING_RATE_KEYS (+11 more)
-
-### Community 49 - "AudioUtil"
-Cohesion: 0.08
-Nodes (22): ActivationLessonBanner(), HomeworkCompleteModal(), HomeworkCompleteModalProps, PaintExitPopup(), Props, AudioButton(), AudioButtonProps, GenericPopup() (+14 more)
-
-### Community 50 - "OneRosterApi.ts"
 Cohesion: 0.09
-Nodes (5): Chapter, Course, Lesson, CurriculumController, Result
+Nodes (20): AbilityKeys, BLEND_WEIGHT_KEYS, DEFAULT_BLEND_WEIGHTS, DEFAULT_LEARNING_RATES, ENGLISH_AND_MATHS_BLEND_WEIGHTS, ENGLISH_LEARNING_RATES, HINDI_LEARNING_RATES, LEARNING_RATE_KEYS (+12 more)
+
+### Community 50 - "Result"
+Cohesion: 0.08
+Nodes (4): Chapter, Course, CurriculumController, Result
 
 ### Community 51 - "ServiceApi.ts"
-Cohesion: 0.05
-Nodes (30): TeacherAPIResponse, CreateSchoolNoteInput, ActivitiesFilterOptions, CampaignAssignmentChapterOption, CampaignAssignmentGradeOption, CampaignAssignmentLessonOption, CampaignAssignmentSummaryRow, CampaignAssignmentUniqueSubject (+22 more)
+Cohesion: 0.06
+Nodes (25): PROFILETYPE, CreateSchoolNoteInput, FCSchoolStats, ActivitiesFilterOptions, CampaignAssignmentChapterOption, CampaignAssignmentFilters, CampaignAssignmentGradeOption, CampaignAssignmentLessonOption (+17 more)
 
 ### Community 52 - "types.ts"
-Cohesion: 0.09
-Nodes (39): CAMPAIGN_OBJECTIVE, AudienceSummary(), AudienceSummaryProps, CampaignDetailsSection(), formatCampaignDateDisplay(), AutocompleteOptionProps, CampaignMultiSelect(), CampaignMultiSelectProps (+31 more)
+Cohesion: 0.08
+Nodes (42): CAMPAIGN_OBJECTIVE, AudienceSummary(), AudienceSummaryProps, CampaignDetailsSection(), formatCampaignDateDisplay(), AutocompleteOptionProps, CampaignMultiSelect(), CampaignMultiSelectProps (+34 more)
 
 ### Community 53 - "ClassSection.stories.ts"
 Cohesion: 0.06
@@ -706,31 +698,31 @@ Nodes (25): AudiencePayloadParams, buildCampaignAudiencePayload(), buildCampaign
 
 ### Community 55 - "devDependencies"
 Cohesion: 0.06
-Nodes (35): @chromatic-com/storybook, eslint-config-prettier, eslint-plugin-prettier, http-server, husky, jest, devDependencies, @chromatic-com/storybook (+27 more)
+Nodes (35): babel-jest, @chromatic-com/storybook, eslint-config-prettier, http-server, husky, jest, devDependencies, babel-jest (+27 more)
 
-### Community 56 - "ChapterWiseLessons.tsx"
-Cohesion: 0.12
-Nodes (13): AssignedBadgeIcon(), AssignedBadgeIconProps, AssignedVisibilityToggleProps, ChapterGroup, CourseGroup, Props, LessonComponentProps, SelectIcon() (+5 more)
+### Community 56 - "SelectIconImage.tsx"
+Cohesion: 0.06
+Nodes (34): loadedImageSrcCache, SelectIconImage(), SelectIconImageProps, LessonIconProps, lesson1, Story, AssignedBadgeIcon(), AssignedBadgeIconProps (+26 more)
 
 ### Community 58 - "CampaignReviewStep.tsx"
 Cohesion: 0.13
-Nodes (14): ReviewCard(), ReviewCardProps, ReviewRow(), ReviewRowProps, CampaignReviewData, CampaignReviewStep(), CampaignReviewStepProps, formatDate() (+6 more)
+Nodes (15): CampaignMessagingRowPayload, ReviewCard(), ReviewCardProps, ReviewRow(), ReviewRowProps, CampaignReviewData, CampaignReviewStep(), CampaignReviewStepProps (+7 more)
 
-### Community 59 - "background.worker.ts"
+### Community 59 - "TabType"
 Cohesion: 0.11
-Nodes (18): buildBulkUploadPayload(), bytesToBase64(), downloadRemoteAudio(), fileKey(), getSchoolKey(), handlers, pendingAckResolvers, planHotUpdateFiles() (+10 more)
+Nodes (8): ProgramType, TabType, CampaignDashboardMetric, CampaignListingItem, CampaignListingParams, ProgramListingProgramRow, getSingleRelationValue(), isCampaignListingRelationSort()
 
 ### Community 60 - "Util"
 Cohesion: 0.03
-Nodes (84): CURRENT_LESSON_LEVEL(), KIDS_APP_LOCATION_SELECTIONS, KidsAppLocationSelection, LEARNING_PATHWAY_MODE, MODES, RECOMMENDATION_TYPE, SELECTED_GRADE(), SL_GRADES (+76 more)
+Nodes (82): ALL_SUBJECT, ASSIGNMENT_TYPE, AVATARS, BANDS, BANDWISECOLOR, COURSES, CURRENT_LESSON_LEVEL(), LEADERBOARDHEADERLIST (+74 more)
 
 ### Community 61 - "compilerOptions"
 Cohesion: 0.07
 Nodes (27): dom, dom.iterable, esnext, jest, src, vite/client, webworker, compilerOptions (+19 more)
 
-### Community 62 - "HomeworkPathway.tsx"
-Cohesion: 0.12
-Nodes (35): react-dom, react-dom, HomeworkPathway(), HomeworkPathwayProps, areStringArraysEqual(), fetchLessonsById(), filterPlayableHomeworkItems(), getHomeworkAssignmentId() (+27 more)
+### Community 62 - "HomeworkPathwayStructure.tsx"
+Cohesion: 0.09
+Nodes (40): RewardBoxState, HomeworkPathway(), HomeworkPathwayProps, areStringArraysEqual(), fetchLessonsById(), filterPlayableHomeworkItems(), getHomeworkAssignmentId(), hasHomeworkPathChanged() (+32 more)
 
 ### Community 63 - "mediaCompression.worker.ts"
 Cohesion: 0.08
@@ -744,65 +736,61 @@ Nodes (10): ActivityCallback, ActivityResult, Bundle, CapacitorPlugin, Intent, O
 Cohesion: 0.17
 Nodes (26): ArgumentParser, Path, append_sample_block(), build_highlights(), build_keyed_rows(), build_parser(), build_report(), build_summary() (+18 more)
 
-### Community 66 - "value"
-Cohesion: 0.06
-Nodes (24): value(), LoginWithPhone(), LoginWithPhoneProps, DataTablePagination(), FilterSlider(), FilterSliderProps, SelectedFilters(), SelectedFiltersProps (+16 more)
+### Community 66 - "SelectedFilters.tsx"
+Cohesion: 0.29
+Nodes (5): SelectedFilters(), SelectedFiltersProps, Default, Story, WithFilters
 
 ### Community 67 - "EnumType"
 Cohesion: 0.07
 Nodes (3): EnumType, CampaignMessageApiRow, Json
 
 ### Community 68 - "termsAndConditions.ts"
-Cohesion: 0.11
-Nodes (28): TermsAndCoditionsModal(), TermsAndCoditionsModalProps, TERMS_MODAL_DEFERRED_PATHS, TERMS_MODAL_HIDDEN_PATHS, TermsGate(), { Util }, TermsAndConditions(), TermsPageLocationState (+20 more)
+Cohesion: 0.10
+Nodes (29): TermsAndCoditionsModal(), TermsAndCoditionsModalProps, TERMS_MODAL_DEFERRED_PATHS, TERMS_MODAL_HIDDEN_PATHS, TermsGate(), { Util }, TermsAndConditions(), TermsPageLocationState (+21 more)
 
 ### Community 69 - "dependencies"
 Cohesion: 0.07
-Nodes (27): @algolia/autocomplete-plugin-query-suggestions, @capacitor/android, @capacitor-community/in-app-review, @capacitor-community/text-to-speech, @capacitor/core, @capacitor-firebase/crashlytics, @capacitor/geolocation, crypto-js (+19 more)
+Nodes (27): algoliasearch, @capacitor/android, @capacitor-community/in-app-review, @capacitor-community/text-to-speech, @capacitor/core, @capacitor-firebase/crashlytics, @capacitor/geolocation, crypto-js (+19 more)
 
-### Community 70 - "AvatarObj"
-Cohesion: 0.07
-Nodes (4): AvatarObj, LeaderboardBadges(), toWeeklyRewards(), LeaderboardStickers()
-
-### Community 71 - "CreateSelectedAssignment.tsx"
-Cohesion: 0.05
-Nodes (42): ALL_SUBJECT, ASSIGNMENT_TYPE, AssignmentSource, BANDS, BANDWISECOLOR, buildRecommendedPayload(), getRecommendedLessons(), AssignmentBucket (+34 more)
+### Community 71 - "TeacherAssignment.tsx"
+Cohesion: 0.12
+Nodes (18): AssignmentSource, buildRecommendedPayload(), getRecommendedLessons(), Lesson, Props, RecommendedAssignmentsState, Subject, baseAssignments (+10 more)
 
 ### Community 72 - "useSchoolListExport.ts"
 Cohesion: 0.13
 Nodes (22): applyCellBorders(), applyHeaderColumnWidths(), applyHeaderRowFormatting(), applyMergedHeaderFormatting(), applyWrappedSheetFormatting(), buildExportWorkbook(), buildHeaderMerges(), fetchAllSchoolsForExport() (+14 more)
 
-### Community 73 - "background.worker.types.ts"
-Cohesion: 0.08
-Nodes (24): BuildXlsxFilePayload, BuildXlsxFileResult, ChecksumFile, DownloadRemoteAudioPayload, DownloadRemoteAudioResult, DownloadStickerBookSvgResult, GrowthBookAttributesPayload, GrowthBookAttributesResult (+16 more)
+### Community 73 - "background.worker.ts"
+Cohesion: 0.04
+Nodes (76): xlsx, buildBulkUploadPayload(), buildStatementsForRows(), buildSyncBatches(), buildUpsertStatement(), buildXlsxFile(), bytesToBase64(), downloadRemoteAudio() (+68 more)
 
-### Community 74 - "d"
-Cohesion: 0.06
-Nodes (50): ae(), aS(), bC(), be(), bS(), C(), ce, cloneDeep() (+42 more)
+### Community 74 - "ce"
+Cohesion: 0.09
+Nodes (15): aS(), bC(), CC(), ce, cS(), hS(), iS(), MC() (+7 more)
 
 ### Community 75 - "ClassDetailsPageUtils.ts"
-Cohesion: 0.19
-Nodes (22): ClassDetailsPage(), filterByProgramGrades(), formatClassLabel(), getClassDisplayLabel(), getExactClassName(), getProgramAllowedGrades(), getProgramClassScopeValue(), GradeSource (+14 more)
+Cohesion: 0.20
+Nodes (20): ClassDetailsPage(), filterByProgramGrades(), formatClassLabel(), getClassDisplayLabel(), getProgramAllowedGrades(), getProgramClassScopeValue(), GradeSource, isProgramGradeAllowed() (+12 more)
 
 ### Community 76 - "Button.stories.ts"
 Cohesion: 0.10
 Nodes (18): Button(), ButtonProps, Large, Primary, Secondary, Small, Story, Header() (+10 more)
 
-### Community 77 - "useStreakPageLogic"
-Cohesion: 0.17
-Nodes (11): renderBoldText(), StreakInfoPopup(), StreakInfoPopupProps, StreakInfoSection, StreakHeaderStats(), StreakHeaderStatsProps, StreakShareCaptureCard, StreakShareCaptureCardProps (+3 more)
+### Community 77 - "streakPage.tsx"
+Cohesion: 0.10
+Nodes (16): renderBoldText(), StreakInfoPopup(), StreakInfoPopupProps, StreakInfoSection, StreakCalendarSectionProps, WEEKDAY_LABELS, StreakHeaderStats(), StreakHeaderStatsProps (+8 more)
 
 ### Community 78 - "SvgHelpers.ts"
-Cohesion: 0.10
-Nodes (27): Mode, Props, IMPORTANT: wait until SVG slots exist for slot-based rules., SVGScene(), Props, applyColorMode(), applyDragMode(), applyLockedBackground() (+19 more)
+Cohesion: 0.14
+Nodes (25): Mode, Props, IMPORTANT: wait until SVG slots exist for slot-based rules., SVGScene(), applyColorMode(), applyDragMode(), applyLockedBackground(), applyLockedStickerOutline() (+17 more)
 
 ### Community 79 - "Sidebar.stories.tsx"
 Cohesion: 0.09
 Nodes (13): classOptions, SidebarProps, DropdownProps, Dropdowns(), Dashboard(), Story, meta, Story (+5 more)
 
 ### Community 80 - "CampaignMessages.test.tsx"
-Cohesion: 0.25
-Nodes (7): apiHandler, buildDatedMessagingRow(), buildMessagingRow(), CampaignMessagingApiMock, mockUseAppSelector, CampaignMessageRow, CampaignMessagingRow
+Cohesion: 0.18
+Nodes (7): apiHandler, buildDatedMessagingRow(), buildMessagingRow(), CampaignMessagingApiMock, mockUseAppSelector, CampaignMessagingResponse, CampaignMessagingRow
 
 ### Community 81 - ".student"
 Cohesion: 0.12
@@ -820,9 +808,9 @@ Nodes (7): SchoolSection(), buildSchoolSearchKey(), compactSchoolSearchText(), g
 Cohesion: 0.10
 Nodes (16): StudentProfileSectionProps, StudentProfile(), meta, Story, Test1, Test2, Test3, Test4 (+8 more)
 
-### Community 86 - ".runDownloadZipBundle"
-Cohesion: 0.07
-Nodes (13): DownloadLesson(), LiveQuizQuestion(), DisplayStudents(), Leaderboard(), LiveQuizLeaderBoard(), LiveQuizRoom(), getServerChecksum(), REMOTE_CONFIG_KEYS (+5 more)
+### Community 86 - "Capacitor"
+Cohesion: 0.04
+Nodes (58): JoinClass(), DownloadLesson(), ChimpleRiveMascot(), useStickerBookPreviewModalLogic(), LiveQuizQuestion(), createSnapshotTarget(), sanitizeFileName(), useStickerBookSave() (+50 more)
 
 ### Community 87 - "SchoolCheckInModal.tsx"
 Cohesion: 0.20
@@ -833,7 +821,7 @@ Cohesion: 0.19
 Nodes (18): CardListModal(), CardListModalProps, ProcessedStudentItem, StudentItem, StudentSearchResponse, addUniqueEmail(), addUniquePhone(), ContactLike (+10 more)
 
 ### Community 89 - "FirebaseAuth"
-Cohesion: 0.19
+Cohesion: 0.18
 Nodes (3): FirebaseAuth, App, FirebaseAuthentication
 
 ### Community 90 - "LessonBundlePlugin"
@@ -857,44 +845,44 @@ Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
 ### Community 96 - "getCachedImageSrc"
-Cohesion: 0.19
-Nodes (14): CachedImage(), CachedImageProps, shouldBypassCache(), DropdownOption, ImageDropdown(), ImageDropdownProps, splitText(), ensureCacheDirectory() (+6 more)
+Cohesion: 0.22
+Nodes (12): CachedImage(), CachedImageProps, shouldBypassCache(), SubjectSelectionComponent(), SubjectSelectionProps, ensureCacheDirectory(), getCachedImageSrc(), getCacheFileName() (+4 more)
 
 ### Community 97 - "CompactTimePickerField.tsx"
 Cohesion: 0.13
 Nodes (12): CampaignCommunicationSchedule(), CampaignCommunicationScheduleProps, defaultTimeOptions, RenderScheduleProps, buildTimeValue(), CompactTimePickerField(), CompactTimePickerFieldProps, hours (+4 more)
 
-### Community 99 - "backgroundWorkerClient.ts"
-Cohesion: 0.13
-Nodes (17): BackgroundWorkerTask, StreamSyncBatchesPayload, WorkerAckMessage, WorkerBatchReadyMessage, WorkerIncomingMessage, WorkerRequest, WorkerStreamErrorMessage, WorkerStreamRequest (+9 more)
+### Community 99 - "courseConstants.ts"
+Cohesion: 0.15
+Nodes (4): CocosLessonData, CollectionIds, StudentLessonResult, StudentProfile
 
 ### Community 100 - "MainActivity"
 Cohesion: 0.19
 Nodes (8): ActivityResultLauncher, Bundle, Context, Intent, Override, MainActivity, BridgeActivity, ModifiedMainActivityForSocialLoginPlugin
 
 ### Community 101 - "FcInteractPopUp.tsx"
-Cohesion: 0.10
-Nodes (17): ua(), ContactTarget, AttachMediaProps, AttachMediaVariant, VariantConfig, CameraUiMode, inferMediaType(), MediaUploadItem (+9 more)
+Cohesion: 0.12
+Nodes (15): ua(), AttachMediaProps, AttachMediaVariant, VariantConfig, CameraUiMode, inferMediaType(), MediaUploadItem, useMediaActions() (+7 more)
 
-### Community 102 - "ColoringBoard.test.tsx"
-Cohesion: 0.11
-Nodes (13): mockCloseSaveModal, mockCloseSaveToast, mockColoringState, mockGoBack, mockHandleSaveAndShare, mockHookState, mockLocation, mockOpenSaveModal (+5 more)
+### Community 103 - "value"
+Cohesion: 0.08
+Nodes (21): react, value(), react, mockAddListener, mockIsNativePlatform, TextField(), GenderAndAge(), DialogBoxButtons() (+13 more)
 
-### Community 103 - "TextField"
-Cohesion: 0.24
-Nodes (5): mockAddListener, mockIsNativePlatform, TextField(), Story, StudentNameBoxNormal
+### Community 104 - "CampaignSavedAudienceGroup"
+Cohesion: 0.26
+Nodes (4): CampaignAudiencePayload, CampaignSavedAudienceGroup, CreateCampaignSetupPayload, CreateCampaignSetupResult
 
 ### Community 105 - "NoteDetailsDrawer.tsx"
-Cohesion: 0.21
-Nodes (7): MediaItem, Props, formatDate(), Note, NoteDetailsDrawer(), parseMonthNameToNumber(), Props
+Cohesion: 0.14
+Nodes (12): MediaItem, Props, formatDate(), Note, NoteDetailsDrawer(), parseMonthNameToNumber(), Props, ApiNote (+4 more)
 
 ### Community 106 - "StickerBook.test.tsx"
 Cohesion: 0.12
 Nodes (14): expectProps(), getLastProps(), goBackMock, mockCloseSaveModal, mockCloseSaveToast, mockHandleSaveAndShare, mockHookState, mockOpenSaveModal (+6 more)
 
-### Community 107 - "ColoringBoard.tsx"
-Cohesion: 0.11
-Nodes (27): ColoringBoard(), ColoringBoardRouteState, InlineSvg, PaintSavePayload, PaintTopBar(), Props, ColoredRegions, useSvgColoring() (+19 more)
+### Community 107 - "ColoringBoard.test.tsx"
+Cohesion: 0.09
+Nodes (31): mockCloseSaveModal, mockCloseSaveToast, mockColoringState, mockGoBack, mockHandleSaveAndShare, mockHookState, mockLocation, mockOpenSaveModal (+23 more)
 
 ### Community 108 - "ActionMenu.tsx"
 Cohesion: 0.67
@@ -904,25 +892,25 @@ Nodes (3): ActionItem, ActionMenu(), Props
 Cohesion: 0.12
 Nodes (17): scripts, build, build:android, build:full, build:storybook, check:new-any, create-check-sum, fix-staged (+9 more)
 
-### Community 110 - "SchoolClassMetrics.tsx"
-Cohesion: 0.12
-Nodes (27): CLASS_PERFORMANCE_STATUS, CLASS_PERFORMANCE_STATUS_META, ClassMetricValues, getClassMetricValues(), getMetricPerformanceStatus(), normalizeSchoolModel(), renderClassPerformanceCell(), renderNumberCell() (+19 more)
+### Community 110 - "SchoolClass.tsx"
+Cohesion: 0.18
+Nodes (18): CLASS_PERFORMANCE_STATUS, CLASS_PERFORMANCE_STATUS_META, getExactClassName(), ColumnDef, Props, SchoolClasses(), TableRowData, ClassMetricValues (+10 more)
 
 ### Community 112 - "ExpandedTable.tsx"
 Cohesion: 0.13
 Nodes (13): SCORECOLOR, ExpandedResultRow, ExpandedTable(), ExpandedTableProps, getColor(), getLessonScoresByDay(), LessonScoresByDay, StudentReportTableProps (+5 more)
 
-### Community 113 - "HomeworkPathwayStructure.tsx"
-Cohesion: 0.15
-Nodes (14): RewardBoxState, DailyRewardAudioClipName, HomeworkPathLessonItem, HomeworkPathwayLesson, HomeworkPathwayStructureProps, HomeworkStoredPathItem, PendingHomeworkRewardTransition, RewardModalProps (+6 more)
+### Community 113 - ".stopAudioUrlOrTtsPlayback"
+Cohesion: 0.21
+Nodes (5): ActivationLessonBanner(), PaintExitPopup(), DailyRewardModal(), playRewardMessageAudio(), RewardModalProps
 
-### Community 114 - "usePathwaySVG.ts"
-Cohesion: 0.13
-Nodes (16): extractStickerSvg(), CoursePath, CachedLesson, ensurePlayableLearningPath(), EnsurePlayableLearningPathResult, fetchLocalFile(), fetchLocalGroup(), getCourseResolutionOrder() (+8 more)
+### Community 114 - "extractStickerSvg"
+Cohesion: 0.67
+Nodes (3): extractStickerSvg(), getStickerImageFallbackFromBookSvg(), getStickerImageFallbackFromBookSvg()
 
 ### Community 115 - "index.tsx"
-Cohesion: 0.21
-Nodes (10): growthbook, renderApp(), root, clearWebGoogleLoginPending(), isWebGoogleLoginPending(), markWebGoogleLoginPending(), createGrowthBookClient(), initializeGrowthBook() (+2 more)
+Cohesion: 0.24
+Nodes (10): growthbook, renderApp(), root, clearWebGoogleLoginPending(), isWebGoogleLoginPending(), markWebGoogleLoginPending(), initializeGrowthBook(), renderRoot() (+2 more)
 
 ### Community 116 - "CampaignAssignmentOptions"
 Cohesion: 0.14
@@ -932,12 +920,12 @@ Nodes (7): StickerMeta, CampaignAssignmentOptions, CampaignAssignmentOptionsPara
 Cohesion: 0.22
 Nodes (7): Tables, EmptyState, MobileView, sampleApiStudents, Story, User, WithStudents
 
-### Community 118 - "Tt"
-Cohesion: 0.27
-Nodes (3): cacheUserLanguage(), Tt(), vi()
+### Community 118 - "r"
+Cohesion: 0.07
+Nodes (10): ai(), ge(), _ifNode(), si(), ze(), cacheUserLanguage(), Ci(), r() (+2 more)
 
 ### Community 119 - "LeaderboardInfo"
-Cohesion: 0.16
+Cohesion: 0.17
 Nodes (6): LeaderboardDropdownList, LeaderboardInfo, emptyLeaderboardInfo(), getLeaderboardDataType(), mapLeaderboardRow(), pushLeaderboardRow()
 
 ### Community 120 - "StickerBookPreviewStage.tsx"
@@ -953,12 +941,12 @@ Cohesion: 0.14
 Nodes (10): ClassInfoCard(), ClassProp, CurriculumProp, Props, SubjectsProp, toCurriculumDisplay(), toSubjectDisplay(), FullPage (+2 more)
 
 ### Community 123 - "ProgramPage.test.tsx"
-Cohesion: 0.06
-Nodes (28): ProgramActionsMenuProps, PROGRAM_HEADER_FILTER_OPTIONS, ProgramHeaderFilterMenu(), ProgramHeaderFilterMenuProps, ProgramListTable(), ProgramListTableProps, SchoolListExportButtonProps, mockHandleClearFilters (+20 more)
+Cohesion: 0.05
+Nodes (33): ProgramActionsMenuProps, PROGRAM_HEADER_FILTER_OPTIONS, ProgramHeaderFilterMenu(), ProgramHeaderFilterMenuProps, ProgramListTable(), ProgramListTableProps, SchoolListDateRangeDropdown(), SchoolListDateRangeDropdownProps (+25 more)
 
 ### Community 124 - "RemoteConfig.ts"
-Cohesion: 0.17
-Nodes (12): setCachedGrowthBookFeatureValue(), GrowthBookFeatureDebugResult, GrowthBookJsonConfig, useGrowthBookFeatureCache(), APP_ENVIRONMENT, AppEnvironment, BUNDLE_ZIP_URLS_BY_ENV, getBundleZipUrlsForEnv() (+4 more)
+Cohesion: 0.15
+Nodes (7): APP_ENVIRONMENT, AppEnvironment, BUNDLE_ZIP_URLS_BY_ENV, LIDO_BUNDLE_ZIP_URLS_BY_ENV, REMOTE_CONFIG_DEFAULTS, RemoteConfig, FirebaseRemoteConfig
 
 ### Community 125 - "safeNativeBridgePayload.ts"
 Cohesion: 0.21
@@ -972,9 +960,9 @@ Nodes (11): Context, Intent, Override, OTPReceiver, background_color, display, i
 Cohesion: 0.12
 Nodes (5): OpsGenericPopupProps, baseProps, PopupProps, renderPopup(), renderPopupWithClose()
 
-### Community 129 - "SchoolTeachers.tsx"
-Cohesion: 0.14
-Nodes (23): TeacherInfo, ProgramGradeScopeData, SchoolData, DisplayTeacher, EditTeacherAssignmentState, getPerformancePillClass(), getTeacherListCacheKey(), getWhatsappAvailabilityStatus() (+15 more)
+### Community 129 - "SchoolTeachers"
+Cohesion: 0.25
+Nodes (13): getPerformancePillClass(), getTeacherListCacheKey(), getWhatsappAvailabilityStatus(), getWhatsappChipClass(), normalizeWhatsappContactFlag(), renderWhatsappGroupChip(), SchoolTeachers(), getTeacherClassAssignmentDiff() (+5 more)
 
 ### Community 130 - "CampaignListing.test.tsx"
 Cohesion: 0.14
@@ -984,12 +972,8 @@ Nodes (13): anchorEl, baseCampaign, createAuthState(), DataTableBodyMockProps, m
 Cohesion: 0.13
 Nodes (13): Class, Course, Grade, mockGetCurrentClass, mockGetCurrentStudent, mockGetCurrMode, mockHistory, mockLoadBackgroundImage (+5 more)
 
-### Community 132 - ".prefetchLidoCommonAudioAfterSync"
-Cohesion: 0.10
-Nodes (5): FirebaseMessaging, LocalNotifications, AppUpdate, AppUpdateAvailability, AppUpdateResultCode
-
-### Community 134 - "OpsModulePage.tsx"
-Cohesion: 0.26
+### Community 134 - "OpsModulePage.test.tsx"
+Cohesion: 0.23
 Nodes (12): OpsModulePage(), mockPush, mockUseAppSelector, originalDefinitions, resetDefinitions(), getModuleCardInitials(), getModuleCardRoute(), getModuleInitialWords() (+4 more)
 
 ### Community 135 - "LiveQuizCountdownTimer.stories.ts"
@@ -1013,20 +997,20 @@ Cohesion: 0.21
 Nodes (3): StickerBook, UserStickerProgress, mapStickerBookRow()
 
 ### Community 140 - "SchoolClass.test.tsx"
-Cohesion: 0.15
-Nodes (9): ActionMenuItem, ApiHandlerMock, baseData, classRows, mockApiHandler, MockColumn, MockRow, RenderableCell (+1 more)
+Cohesion: 0.14
+Nodes (13): ApiHandlerMock, mockApiHandler, mockSchoolStudents, ClassRow, SchoolDetailsData, ActionMenuItem, ApiHandlerMock, baseData (+5 more)
 
 ### Community 141 - "nativeRuntime.ts"
-Cohesion: 0.31
-Nodes (6): ensureSocialLoginInitialized(), checkNativeVersionAndReset(), initializeNativeRuntime(), startNativeInit(), Preferences, LiveUpdate
+Cohesion: 0.24
+Nodes (7): ensureSocialLoginInitialized(), checkNativeVersionAndReset(), initializeNativeRuntime(), startNativeInit(), Preferences, LiveUpdate, SocialLogin
 
 ### Community 142 - "TeacherProfileSection.stories.ts"
 Cohesion: 0.10
 Nodes (14): CalendarPickerProps, mockCancel, mockConfirm, AssignmentDetail, TeacherProfileSection(), TeacherProfileSectionProps, Default, meta (+6 more)
 
-### Community 143 - "CreateSelectedAssignment"
-Cohesion: 0.07
-Nodes (24): @capacitor/barcode-scanner, @capacitor/barcode-scanner, getStreakTargetRect(), registerStreakRectResolver(), registerStreakRewardPulseHandler(), StreakPulseHandler, StreakRectResolver, triggerStreakRewardPulse() (+16 more)
+### Community 143 - "requireTeacherModeAuth"
+Cohesion: 0.23
+Nodes (9): @capacitor/barcode-scanner, @capacitor/barcode-scanner, getTeacherModeAuthMessage(), requireTeacherModeAuth(), shouldUsePopupFallback(), showTeacherModeAuthMessage(), AssignScreen(), TeacherAssignment() (+1 more)
 
 ### Community 144 - "package.json"
 Cohesion: 0.17
@@ -1038,19 +1022,19 @@ Nodes (6): CommonAppBarProps, ProfileAvatarProps, appBar, Story, appBar, Story
 
 ### Community 147 - ".error"
 Cohesion: 0.04
-Nodes (8): TressureBox(), TressureBoxProps, FileUpload(), getXlsx(), generateFinalPayload(), getSchoolKey(), resolveLessonZipUrl(), SubjectSelectionComponent()
+Nodes (31): LeaderboardBadges(), toWeeklyRewards(), LeaderboardStickers(), RiveMascotCanvas(), TressureBox(), TressureBoxProps, FileUpload(), getXlsx() (+23 more)
 
 ### Community 148 - "ApiHandler.ts"
-Cohesion: 0.07
-Nodes (13): GeoDataParams, CampaignAssignmentFilters, CampaignAssignmentsResponse, CampaignAudiencePayload, CampaignAudienceSummary, CampaignAudienceSummaryParams, CampaignCancellationDetails, CampaignSavedAudienceGroup (+5 more)
+Cohesion: 0.10
+Nodes (10): TeacherAPIResponse, PaginatedResponse, SchoolNote, CampaignAudienceSummary, CampaignAudienceSummaryParams, CampaignSetupOptions, GetSchoolsWithProgramAccessParams, OpsStudentPerformanceBandRow (+2 more)
 
 ### Community 149 - "readAssignmentCartFromStorage"
 Cohesion: 0.29
 Nodes (5): AssignmentCartData, getAssignmentCartStorageKey(), isValidAssignmentCartData(), readAssignmentCartFromStorage(), writeAssignmentCartToStorage()
 
 ### Community 150 - "GenderAndAge.stories.ts"
-Cohesion: 0.14
-Nodes (12): GenderAndAge(), Age10, Age4, Age5_, Age6, Age7, Age8, Age9 (+4 more)
+Cohesion: 0.17
+Nodes (11): Age10, Age4, Age5_, Age6, Age7, Age8, Age9, Boy (+3 more)
 
 ### Community 151 - "sqlite.ts"
 Cohesion: 0.17
@@ -1069,20 +1053,20 @@ Cohesion: 0.18
 Nodes (8): TeacherProfileSectionProps, meta, Story, Test1, Test2, Test3, Test4, Test5
 
 ### Community 156 - ".logEvent"
-Cohesion: 0.10
-Nodes (20): logProfileClick(), getModeFromFeature(), ProfileDetails(), resolveScoreCardStudentContext(), ScoreCard(), AddCourses(), applyAutoUserModeLanguage(), AutoUserModeLanguageApi (+12 more)
+Cohesion: 0.06
+Nodes (31): logProfileClick(), ColoringBoard(), ColorPalette(), useSvgColoring(), ParentalLock(), ProfileCard(), getModeFromFeature(), ProfileDetails() (+23 more)
 
 ### Community 157 - "SchoolTeachers.test.tsx"
-Cohesion: 0.12
-Nodes (14): ApiHandlerMock, mockApiHandler, mockSchoolStudents, ClassRow, ActionMenuItem, ActionMenuProps, ApiHandlerMock, ApiResponse (+6 more)
+Cohesion: 0.09
+Nodes (20): TeacherInfo, DisplayTeacher, EditTeacherAssignmentState, ActionMenuItem, ActionMenuProps, ApiHandlerMock, ApiResponse, mockApiHandler (+12 more)
 
 ### Community 158 - "CampaignSetupPage.test.tsx"
 Cohesion: 0.22
 Nodes (6): completeSetupStep(), getDateValueDaysFromToday(), mockApiHandler, mockAuthHandler, mockGoBack, openSelectAndChoose()
 
-### Community 159 - "useCampaignMessagesController"
-Cohesion: 0.15
-Nodes (15): CampaignMessages(), CampaignMessagesProps, buildScheduleTimeText(), CampaignMessagesScheduleType, getEditableScheduleTime(), getIsoWithScheduleTime(), getPollOptionsForEdit(), getReadonlyText() (+7 more)
+### Community 159 - "CampaignMessages.tsx"
+Cohesion: 0.25
+Nodes (8): CampaignMessages(), CampaignMessagesProps, CampaignMessagesScheduleType, HOUR_OPTIONS, PERIOD_OPTIONS, UseCampaignMessagesControllerParams, CampaignsOverviewApiCampaign, CampaignFrequency
 
 ### Community 161 - "Activity"
 Cohesion: 0.33
@@ -1096,6 +1080,10 @@ Nodes (9): CallExpression(), getFunctionName(), getPropertyKeyName(), hasMetadat
 Cohesion: 0.38
 Nodes (9): cast_value(), get_column_type_map(), load_json(), main(), parse_csv_value(), process_table(), Converts value (string or datetime) to ISO 8601 string with +00:00 suffix., save_json() (+1 more)
 
+### Community 164 - "HomeworkCompleteModal.tsx"
+Cohesion: 0.24
+Nodes (5): HomeworkCompleteModal(), HomeworkCompleteModalProps, Props, AudioButton(), AudioButtonProps
+
 ### Community 165 - "DashboardTable.tsx"
 Cohesion: 0.24
 Nodes (5): DashboardTableProps, TableRightHeaderProps, getColor(), TableStudentData(), TableStudentDataProps
@@ -1108,21 +1096,21 @@ Nodes (8): ExpandedTable(), ExpandedTableProps, getColor(), MonthlyData, Story, 
 Cohesion: 0.22
 Nodes (8): ExpandedUser(), ExpandedUserProps, BigName, Character, EmptyName, MediumName, SmallName, Story
 
-### Community 168 - "StickerBookPreviewModal.logic.ts"
-Cohesion: 0.10
-Nodes (19): StickerBookPreviewFooterProps, getStickerBookAudioConfig(), StickerBookModalData, StickerBookPreviewModalLogicParams, StickerBookPreviewMode, StickerBookPreviewVariant, buildSlotSvg(), mockCloseSaveModal (+11 more)
+### Community 168 - "StickerBookPreviewModal.tsx"
+Cohesion: 0.17
+Nodes (9): StickerBookPreviewFooterProps, getStickerBookAudioConfig(), StickerBookModalData, StickerBookPreviewMode, StickerBookPreviewVariant, playStickerBookPopupAudio(), StickerBookPreviewModal(), StickerBookPreviewModalProps (+1 more)
 
 ### Community 169 - "School"
 Cohesion: 0.05
-Nodes (22): CommonButton(), CommonButtonProps, AddSchoolProps, EditSchoolProps, SchoolTabProps, School, assignButton, cancelButton (+14 more)
+Nodes (19): CommonButton(), CommonButtonProps, AddSchoolProps, EditSchoolProps, SchoolTabProps, School, assignButton, cancelButton (+11 more)
 
 ### Community 170 - "FileErrorComponent.stories.ts"
 Cohesion: 0.20
 Nodes (5): ErrorPageProps, CustomMessage, Default, Story, WithoutDownloadButton
 
 ### Community 171 - "SchoolStudents.tsx"
-Cohesion: 0.10
-Nodes (27): OPS_PERFORMANCE_BANDS, OpsSupportLevelMap, STUDENT_PERFORMANCE_BAND_KEYS, StudentInfo, WHATSAPP_GROUP_STATUS, WHATSAPP_GROUP_STATUS_KEYS, SchoolPrincipals(), ApiStudentData (+19 more)
+Cohesion: 0.09
+Nodes (27): AGE_OPTIONS, OPS_PERFORMANCE_BANDS, OpsSupportLevelMap, STUDENT_PERFORMANCE_BAND_KEYS, StudentInfo, ProgramGradeScopeData, SchoolData, ApiStudentData (+19 more)
 
 ### Community 172 - "VerificationInProgress.stories.ts"
 Cohesion: 0.22
@@ -1156,10 +1144,6 @@ Nodes (7): COMMONTAB_LIST, CommonTab(), CommonTabProps, classes, school, Story, 
 Cohesion: 0.25
 Nodes (6): HomeWeeklySummary, TREND_ICON_BY_TYPE, WeeklySummaryProps, AllAssigmentsCompleted, FewAssignmentsDome, Story
 
-### Community 183 - "ColorPalette.tsx"
-Cohesion: 0.22
-Nodes (6): BORDER_COLORS, ColorPalette(), COLORS, Props, COLORS, mockLogEvent
-
 ### Community 184 - "backButtonRegistry.ts"
 Cohesion: 0.21
 Nodes (14): BackButtonHandler, BackButtonRecord, BackButtonScope, getBackButtonHandler(), getCurrentPath(), handlers, HardwareBackButtonHandler(), HardwareBackButtonHandlerProps (+6 more)
@@ -1180,9 +1164,9 @@ Nodes (10): GENERIC_POPUP_TRIGGER_CONDITION, createPopupConfig(), installAnalyti
 Cohesion: 0.36
 Nodes (7): fetch_documents_by_id_one_by_one(), get_curriculum_id(), get_grade_id(), get_language_id(), get_subject_id(), get_the_doc(), run_timer()
 
-### Community 189 - "SchoolTeachers.stories.tsx"
-Cohesion: 0.22
-Nodes (7): EmptyState, MobileView, sampleApiTeachers, Searchable, Story, WithActiveFilters, WithTeachers
+### Community 189 - "getProgressCourse"
+Cohesion: 0.25
+Nodes (11): findCourseByCourseId(), findCourseByLessonId(), getCourseList(), getCurrentCourseFromIndex(), getCurrentPathwayStickerProgress(), getFallbackLearningPath(), getProgressCourse(), hasRewardSnapshot() (+3 more)
 
 ### Community 190 - "EditClassField.stories.ts"
 Cohesion: 0.22
@@ -1212,21 +1196,21 @@ Nodes (8): mockAoaToSheet, mockBookAppendSheet, mockBookNew, mockEncodeCell, moc
 Cohesion: 0.29
 Nodes (4): Component, Element, Prop, LidoAvatar
 
-### Community 197 - "xlsx"
-Cohesion: 0.29
-Nodes (8): xlsx, buildXlsxFile(), getWorksheetCell(), getWrappedCellMaxLineLength(), getXlsx(), parseXlsxSheets(), toArrayBuffer(), xlsx
+### Community 197 - "NavigationHandler.ts"
+Cohesion: 0.33
+Nodes (8): flushPendingNavigationTargets(), PendingNavigationTarget, pendingNavigationTargets, registerNavigationHandler(), ReplaceHistory, replaceWithNavigationTarget(), unregisterNavigationHandler(), useNavigationHandler()
 
 ### Community 199 - "StickerBookCompletionModal.tsx"
-Cohesion: 0.18
-Nodes (4): StickerBookCompletionFooter(), StickerBookCompletionFooterProps, Props, Props
+Cohesion: 0.32
+Nodes (3): StickerBookCompletionFooter(), StickerBookCompletionFooterProps, Props
 
 ### Community 200 - "StartEndDateSelect.tsx"
 Cohesion: 0.29
 Nodes (4): DateTimePicker(), DateTimePickerProps, StartEndDateSelectProps, Story
 
-### Community 201 - "useTeacherAuthentication.ts"
-Cohesion: 0.36
-Nodes (6): getSafeAnswerLength(), sanitizeAnswer(), TeacherAuthenticationKey, useTeacherAuthentication(), UseTeacherAuthenticationParams, UseTeacherAuthenticationResult
+### Community 201 - "TeacherAuthenticationPopup.tsx"
+Cohesion: 0.18
+Nodes (15): TeacherAuthGateSourceEntryPoint, generateTeacherAuthenticationChallenge(), getRandomInteger(), TeacherAuthenticationChallenge, getGeneratedProblem(), getKeyClassName(), getKeyLabel(), TeacherAuthenticationPopup() (+7 more)
 
 ### Community 202 - "TeacherHeader.stories.ts"
 Cohesion: 0.29
@@ -1236,9 +1220,9 @@ Nodes (6): TeacherHeader(), TeacherHeaderProps, meta, Story, Test1, Test2
 Cohesion: 0.25
 Nodes (4): TabComponentProps, Default, SecondTabActive, Story
 
-### Community 204 - "CampaignsOverviewWidgets.tsx"
-Cohesion: 0.25
-Nodes (12): buildCampaignsOverviewFields(), buildCampaignsOverviewMetrics(), CAMPAIGN_LISTING_STATUS, CAMPAIGN_STATUS, CampaignsOverviewCancellationDetails, CampaignsOverviewDisplayObject, CampaignsOverviewResolvedStatus, formatFieldLabel() (+4 more)
+### Community 204 - "SchoolList.export.ts"
+Cohesion: 0.42
+Nodes (7): buildExportCellTextMap(), buildMetricExportText(), buildMetricWithPercentExportText(), buildSchoolListExportSheetRows(), ExportMetricText, formatMetricValue(), getSchoolListExportColumns()
 
 ### Community 205 - "SchoolCoordinators.stories.tsx"
 Cohesion: 0.20
@@ -1249,8 +1233,8 @@ Cohesion: 0.25
 Nodes (5): StudentReportHeaderProps, Story, Test2, Test3, Test4
 
 ### Community 207 - "GroupWiseStudents.stories.tsx"
-Cohesion: 0.18
-Nodes (12): getBandTitleByColor(), StudentProgressData, DashBoardStudentProgresProps, GroupWiseStudents(), GroupWiseStudentsProps, GreenBand, GreyBand, mockStudent (+4 more)
+Cohesion: 0.25
+Nodes (7): GreenBand, GreyBand, mockStudent, OrangeBand, RedBand, result, Story
 
 ### Community 208 - "SchoolUserList.stories.ts"
 Cohesion: 0.25
@@ -1281,8 +1265,8 @@ Cohesion: 0.48
 Nodes (5): TABLEDROPDOWN, TableChoiceHeader(), TableChoiceHeaderProps, TypeSelectionDropDown(), TypeSelectionDropDownProps
 
 ### Community 216 - "platformSetup.ts"
-Cohesion: 0.24
-Nodes (10): initializeFireBase(), REQUIRED_FIREBASE_ENV_KEYS, isNativePlatform, applyMobileWebBrowserClass(), initializePlatformSetup(), initializeSpeechPolyfills(), IntrinsicElements, JSX (+2 more)
+Cohesion: 0.31
+Nodes (8): isNativePlatform, applyMobileWebBrowserClass(), initializePlatformSetup(), initializeSpeechPolyfills(), IntrinsicElements, JSX, NavigatorWithUserAgentData, SpeechPolyfillWindow
 
 ### Community 217 - "CourseChapterDropdown.stories.ts"
 Cohesion: 0.33
@@ -1294,7 +1278,7 @@ Nodes (6): checkValidServiceWorker(), Config, isLocalhost, register(), registerV
 
 ### Community 219 - "renderRoot.tsx"
 Cohesion: 0.19
-Nodes (8): persistor, initializeErrorReporting(), reactRootErrorHandlers, recordException(), finalizeFirstRenderNativeRuntime(), createAppRoot(), FirebaseCrashlytics, SplashScreen
+Nodes (7): GbProvider(), persistor, initializeErrorReporting(), reactRootErrorHandlers, recordException(), createAppRoot(), FirebaseCrashlytics
 
 ### Community 220 - "DataTableBody.stories.ts"
 Cohesion: 0.29
@@ -1316,9 +1300,9 @@ Nodes (4): AssignmentNextButtonProps, assignmentCount, assignmentCount1, Story
 Cohesion: 0.29
 Nodes (5): ClassSummaryInfoPopupProps, ENGAGEMENT_ROWS, SUMMARY_ROWS, TREND_ICON_BY_TYPE, TREND_ROWS
 
-### Community 225 - ".courseId"
-Cohesion: 0.12
-Nodes (9): DropdownMenu(), LiveQuizGame(), TableRightHeader(), Assignment, Monthly, Story, Test1, Weekly (+1 more)
+### Community 225 - "TableRightHeader.stories.ts"
+Cohesion: 0.33
+Nodes (5): Assignment, Monthly, Story, Test1, Weekly
 
 ### Community 226 - "EditSchoolSection.tsx"
 Cohesion: 0.29
@@ -1336,17 +1320,17 @@ Nodes (6): Story, Test1, Test2, Test3, Test4, Test5
 Cohesion: 0.29
 Nodes (6): AnotherRole, DefaultUser, meta, mockUser, Story, UserWithImage
 
-### Community 234 - "LessonIcon.tsx"
-Cohesion: 0.33
-Nodes (3): LessonIconProps, lesson1, Story
+### Community 234 - "Compact Codex task prompts"
+Cohesion: 0.25
+Nodes (7): Bug fix, Code review, Compact Codex task prompts, Feature implementation, Prompt compression, Refactoring, Session handoff
 
-### Community 235 - "CampaignCommunicationRow.test.tsx"
-Cohesion: 0.24
-Nodes (7): CampaignCommunicationRow(), CampaignCommunicationRowProps, baseRow, createRow(), renderRow(), RenderRowProps, CampaignCommunicationRowState
+### Community 235 - "database.ts"
+Cohesion: 0.25
+Nodes (7): CompositeTypes, Database, DatabaseWithoutInternals, DefaultSchema, Enums, TablesInsert, TablesUpdate
 
-### Community 236 - "useImportJsonForCurriculum"
-Cohesion: 0.33
-Nodes (10): buildFirstRecommendationRow(), buildNextRecommendationRow(), byId(), cleanNumber(), csvCell(), csvRow(), isActive(), recommendationSkillId() (+2 more)
+### Community 236 - "GenericPopUp.tsx"
+Cohesion: 0.43
+Nodes (5): GenericPopup(), getPopupNarrationLines(), playPopupAudio(), playPopupAudioByLine(), Props
 
 ### Community 237 - "userTabs.stories.ts"
 Cohesion: 0.20
@@ -1365,8 +1349,8 @@ Cohesion: 0.40
 Nodes (4): getTitleVariant(), ScoreCardTitle(), ScoreCardTitleProps, TitleVariant
 
 ### Community 242 - "useNativeAppListeners.ts"
-Cohesion: 0.31
-Nodes (7): ExtraData, getNotificationData(), NotificationPortPlugin, PluginListenerHandle, processNotificationData(), updateAvatarSuggestionJson(), useNativeAppListeners()
+Cohesion: 0.13
+Nodes (13): LessonSlider(), ExtraData, getNotificationData(), NotificationPortPlugin, PluginListenerHandle, processNotificationData(), updateAvatarSuggestionJson(), useNativeAppListeners() (+5 more)
 
 ### Community 243 - "DashboardTable.stories.ts"
 Cohesion: 0.33
@@ -1376,9 +1360,9 @@ Nodes (5): FourStudent, OneStudent, Story, ThreeStudent, TwoStudent
 Cohesion: 0.22
 Nodes (8): EntityModalProps, FieldColumn, FieldConfig, FieldKind, FormCard(), MessageConfig, MessageType, MockPhoneInputProps
 
-### Community 245 - "StreakCalendarSection.tsx"
-Cohesion: 0.22
-Nodes (6): StreakCalendarSectionProps, WEEKDAY_LABELS, StreakPortPlugin, CalendarDayCell, CalendarRow, StreakShareImageFile
+### Community 245 - "scoreCardLogic.test.ts"
+Cohesion: 0.29
+Nodes (4): mockApi, mockGetLatestLearningPathByUpdatedAt, UserRow, UserStickerBookRow
 
 ### Community 246 - "SubjectSelection.stories.tsx"
 Cohesion: 0.33
@@ -1400,17 +1384,17 @@ Nodes (3): mockCreateObjectURL, MockFFmpeg, mockToBlobURL
 Cohesion: 0.60
 Nodes (3): ExampleInstrumentedTest, Test, RunWith
 
-### Community 251 - "useStickerBookSave"
+### Community 251 - "ScoreCardProgressRows.tsx"
+Cohesion: 0.38
+Nodes (6): getProgressRowRenderState(), ProgressRowRenderState, renderCompletedCheck(), ScoreCardProgressRowData, ScoreCardProgressRows(), ScoreCardProgressRowsProps
+
+### Community 254 - "Graphify setup and maintenance"
 Cohesion: 0.33
-Nodes (7): createSnapshotTarget(), sanitizeFileName(), defaultOptions, flushAsyncWork(), waitForShareTimer(), useStickerBookSave(), useStickerBookSaveOptions
+Nodes (5): Codex and hook integration, Graphify setup and maintenance, Routine maintenance, Upgrading or rebuilding, Validated version and installation
 
-### Community 254 - "buildStatementsForRows"
-Cohesion: 0.28
-Nodes (9): buildStatementsForRows(), buildSyncBatches(), buildUpsertStatement(), emitBatchReady(), getRowFieldNames(), normalizeSqliteValue(), safeTableName(), streamSyncBatches() (+1 more)
-
-### Community 255 - "StudentProgressHeader.tsx"
-Cohesion: 0.29
-Nodes (4): HeaderIconConfig, StudentProgressHeader(), mockHistory, mockSetPathToBackButton
+### Community 255 - "SchoolTab.stories.ts"
+Cohesion: 0.33
+Nodes (5): addSchool, deleteSchool, editSchool, schoolDetail, Story
 
 ### Community 256 - "growthbookCacheRestore.ts"
 Cohesion: 0.50
@@ -1432,9 +1416,9 @@ Nodes (3): Default, Story, WithFilters
 Cohesion: 0.40
 Nodes (4): DEMO_USERS, meta, Story, WithDemoUsers
 
-### Community 262 - "useLearningPath"
-Cohesion: 0.29
-Nodes (7): buildSameFrameworkAssessmentPath(), getAssignedAssessmentNodeKey(), hasAssessmentProgress(), hasInProgressAssessmentPath(), LearningPath, mergeAssignedAssessmentIdsIntoPath(), useLearningPath()
+### Community 262 - "capacitor-biometric-auth.ts"
+Cohesion: 0.33
+Nodes (4): AndroidBiometryStrength, BiometricAuth, BiometryError, BiometryErrorType
 
 ### Community 263 - "SchoolProfileContent.stories.ts"
 Cohesion: 0.40
@@ -1465,20 +1449,16 @@ Cohesion: 0.29
 Nodes (6): Coordinators, Principal, Sponsors, Story, Students, Teachers
 
 ### Community 275 - "ProgramDetailsPage.tsx"
-Cohesion: 0.14
-Nodes (14): PROGRAM_TAB_LABELS, ContactCard(), Manager, formatProgramDate(), formatProgramModel(), ProgramData, ProgramDetailComponentProps, ProgramDetailsPage() (+6 more)
+Cohesion: 0.19
+Nodes (11): PROGRAM_TAB_LABELS, ContactCard(), Manager, formatProgramDate(), formatProgramModel(), ProgramData, ProgramDetailComponentProps, ProgramDetailsPage() (+3 more)
 
 ### Community 276 - "ProgramPage.stories.ts"
 Cohesion: 0.50
 Nodes (3): meta, Page, Story
 
-### Community 277 - "SchoolListItem.tsx"
-Cohesion: 0.67
-Nodes (3): highlightText(), SchoolListItem(), SchoolListItemProps
-
-### Community 281 - "ChapterContainer.tsx"
-Cohesion: 0.29
-Nodes (4): ChapterContainerProps, Story, Test1, Test2
+### Community 281 - "PathwayModal.tsx"
+Cohesion: 0.50
+Nodes (3): PathwayModal(), PathwayModalProps, playPathwayModalAudio()
 
 ### Community 284 - "SideMenu.stories.ts"
 Cohesion: 0.50
@@ -1496,13 +1476,13 @@ Nodes (5): For /graphify explain, For /graphify path, graphify reference: query,
 Cohesion: 0.33
 Nodes (5): Dependencies, Graph, lido-avatar, Properties, Used by
 
-### Community 309 - "SchoolNotes.tsx"
-Cohesion: 0.47
-Nodes (5): ApiNote, detectSchoolIdFromUrl(), Note, parseDateForDisplay(), SchoolNotes()
+### Community 309 - "imageDropdown.tsx"
+Cohesion: 0.50
+Nodes (4): DropdownOption, ImageDropdown(), ImageDropdownProps, splitText()
 
 ### Community 314 - "AppOverlays.tsx"
-Cohesion: 0.40
-Nodes (3): AppOverlaysProps, PopupEventDetail, PopupLocalizedContent
+Cohesion: 0.20
+Nodes (6): AppOverlaysProps, PopupEventDetail, PopupLocalizedContent, TriggerType, PopupEventDetail, PopupLocalizedContent
 
 ### Community 344 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
@@ -1516,25 +1496,33 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
+### Community 389 - "ProgramDetailsPage.stories.tsx"
+Cohesion: 0.50
+Nodes (3): meta, Page, Story
+
+### Community 457 - "Repository policy"
+Cohesion: 0.25
+Nodes (7): Code and persistence, Commands and validation, Database, native, and generated artifacts, Git, skills, and reporting, Platform and layout, Repository policy, Scope and discovery
+
 ## Knowledge Gaps
-- **1912 isolated node(s):** `ns`, `supportedLngs`, `config`, `preview`, `config` (+1907 more)
+- **1928 isolated node(s):** `ns`, `supportedLngs`, `config`, `preview`, `config` (+1923 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **197 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **200 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `TableTypes` connect `TableTypes` to `ServiceApi`, `ApiHandler`, `SupabaseApi`, `RoleType`, `ServiceConfig`, `.prefetchLidoCommonAudioAfterSync`, `SelectMode.tsx`, `SqliteApi`, `SchoolProfileContent.stories.ts`, `FirebaseApi`, `.getCurrentStudent`, `useLearningPath.ts`, `TeacherProfileSection.stories.ts`, `.getI`, `CreateSelectedAssignment`, `constants.ts`, `PAGES`, `ApiHandler.ts`, `FCSchoolStats`, `.executeQuery`, `.error`, `SqliteApi.ts`, `Parent.tsx`, `ChapterContainer.tsx`, `scoreCardLogic.ts`, `SchoolListItem.tsx`, `.logEvent`, `SupabaseApi.ts`, `FirebaseAnalytics`, `FirebaseApi.ts`, `palUtil`, `.getLessonsForChapter`, `campaignListingHelpers.ts`, `School`, `Lesson`, `LiveQuizQuestion.tsx`, `SupabaseAuth`, `ServiceAuth`, `palUtil.ts`, `OneRosterApi.ts`, `ServiceApi.ts`, `RequestTypes`, `STATUS`, `ChapterWiseLessons.tsx`, `Util`, `HomeworkPathway.tsx`, `UserProfile.stories.ts`, `EnumType`, `termsAndConditions.ts`, `AvatarObj`, `CreateSelectedAssignment.tsx`, `StudentReportHeader.tsx`, `GroupWiseStudents.stories.tsx`, `SchoolUserList.stories.ts`, `UserDetail.stories.ts`, `ShowChaptersLogic.ts`, `.student`, `TABLES`, `.runDownloadZipBundle`, `SchoolCheckInModal.tsx`, `FirebaseAuth`, `renderRoot.tsx`, `OneRosterAuth`, `FcInteractPopUp.tsx`, `SchoolUserDetail.stories.ts`, `HomeworkPathwayStructure.tsx`, `usePathwaySVG.ts`, `index.tsx`, `ClassInfoCard.tsx`?**
-  _High betweenness centrality (0.222) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `dependencies` to `ProgramPageLogic.ts`, `HomeworkPathway.tsx`, `CreateSelectedAssignment`, `package.json`, `xlsx`, `@algolia/autocomplete-js`, `@algolia/autocomplete-plugin-recent-searches`, `@algolia/autocomplete-theme-classic`, `algoliasearch`, `@aparajita/capacitor-biometric-auth`, `@awesome-cordova-plugins/background-mode`, `@capacitor/app`, `@capacitor/browser`, `@capacitor/cli`, `@capacitor-community/firebase-analytics`, `@capacitor-community/sqlite`, `@capacitor/filesystem`, `@capacitor-firebase/authentication`, `@capacitor-firebase/messaging`, `@capacitor-firebase/remote-config`, `capacitor-fs`, `@capacitor/haptics`, `@capacitor/keyboard`, `@capacitor/local-notifications`, `@capacitor/preferences`, `@capacitor/screen-orientation`, `@capacitor/splash-screen`, `@capacitor/status-bar`, `@capacitor/toast`, `@capgo/capacitor-social-login`, `@chimple/palau-recommendation`, `cordova-plugin-background-mode`, `cordova-plugin-device`, `cordova-support-android-plugin`, `cuba`, `date-fns`, `dayjs`, `@emotion/react`, `@emotion/styled`, `@ffmpeg/ffmpeg`, `@ffmpeg/util`, `firebase`, `@growthbook/growthbook-react`, `html2canvas`, `html-to-image`, `i18next`, `i18next-browser-languagedetector`, `i18next-http-backend`, `identity-obj-proxy`, `@ionic/react`, `@ionic/react-router`, `jeep-sqlite`, `leaflet`, `libphonenumber-js`, `lido-player`, `lido-standalone`, `@mui/icons-material`, `@mui/material`, `query-string`, `react-circular-progressbar`, `react-confetti`, `react-i18next`, `react-icons`, `react-international-phone`, `react-leaflet`, `react-loading-skeleton`, `react-pull-to-refresh`, `react-redux`, `react-router-dom`, `react-share`, `react-spinners`, `@reduxjs/toolkit`, `@rive-app/react-canvas`, `rive-react`, `@sentry/capacitor`, `@sentry/react`, `@splidejs/react-splide`, `styled-components`, `@supabase/supabase-js`, `uuid`, `web-vitals`, `workbox-background-sync`, `workbox-broadcast-update`, `workbox-cacheable-response`, `workbox-core`, `workbox-expiration`, `workbox-google-analytics`, `workbox-navigation-preload`, `workbox-precaching`, `workbox-routing`, `workbox-strategies`, `workbox-streams`, `xlsx-js-style`, `zip2`, `axios`, `@capacitor-community/http`, `@capacitor/device`, `@capawesome/capacitor-app-update`, `@capawesome/capacitor-live-update`, `qrcode.react`, `react-router`, `@types/pino`?**
-  _High betweenness centrality (0.095) - this node is a cross-community bridge._
-- **Why does `react` connect `ProgramPageLogic.ts` to `useKidsAppLocationAccess.test.ts`, `CompactTimePickerField.tsx`, `RoleType`, `campaignAssignmentUtils.ts`, `dependencies`, `SelectMode.tsx`, `campaignListingHelpers.ts`, `SchoolList.helpers.tsx`, `SchoolStudents.tsx`, `ActionMenu.tsx`, `.getCurrentStudent`, `SvgHelpers.ts`, `Button.stories.ts`, `CreateSelectedAssignment`, `AudioUtil`, `studentContactNumbers.ts`?**
-  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+- **Why does `TableTypes` connect `TableTypes` to `ApiHandler`, `SupabaseApi`, `RoleType`, `ServiceConfig`, `.assignCoursesToStudent`, `SelectMode.tsx`, `SqliteApi`, `SchoolProfileContent.stories.ts`, `OneRosterApi`, `FirebaseApi`, `.getCurrentStudent`, `useLearningPath.ts`, `TeacherProfileSection.stories.ts`, `.getI`, `logger`, `Home.tsx`, `schoolUtil.ts`, `ApiHandler.ts`, `.error`, `.executeQuery`, `SqliteApi.ts`, `constants.ts`, `scoreCardLogic.ts`, `.logEvent`, `SupabaseApi.ts`, `EVENTS`, `FirebaseApi.ts`, `campaignListingHelpers.ts`, `School`, `Lesson`, `LiveQuizQuestion.tsx`, `SupabaseAuth`, `ServiceAuth`, `palUtil.ts`, `ServiceApi.ts`, `.getParentsByStudentId`, `RequestTypes`, `STATUS`, `SelectIconImage.tsx`, `Util`, `.ensureInitialized`, `HomeworkPathwayStructure.tsx`, `UserProfile.stories.ts`, `EnumType`, `termsAndConditions.ts`, `AvatarObj`, `TeacherAssignment.tsx`, `StudentReportHeader.tsx`, `GroupWiseStudents.stories.tsx`, `SchoolUserList.stories.ts`, `UserDetail.stories.ts`, `ShowChaptersLogic.ts`, `.student`, `TABLES`, `Capacitor`, `SchoolCheckInModal.tsx`, `FirebaseAuth`, `renderRoot.tsx`, `.googleSign`, `OneRosterAuth`, `FcInteractPopUp.tsx`, `SchoolUserDetail.stories.ts`, `SchoolClass.tsx`, `scoreCardLogic.test.ts`, `ClassInfoCard.tsx`?**
+  _High betweenness centrality (0.170) - this node is a cross-community bridge._
+- **Why does `dependencies` connect `dependencies` to `.getCurrentStudent`, `background.worker.ts`, `value`, `requireTeacherModeAuth`, `package.json`, `@algolia/autocomplete-js`, `@algolia/autocomplete-plugin-recent-searches`, `@algolia/autocomplete-theme-classic`, `@aparajita/capacitor-biometric-auth`, `@awesome-cordova-plugins/background-mode`, `@capacitor/app`, `@capacitor/browser`, `@capacitor/cli`, `@capacitor-community/firebase-analytics`, `@capacitor-community/sqlite`, `@capacitor/filesystem`, `@capacitor-firebase/authentication`, `@capacitor-firebase/messaging`, `@capacitor-firebase/remote-config`, `capacitor-fs`, `@capacitor/haptics`, `@capacitor/keyboard`, `@capacitor/local-notifications`, `@capacitor/preferences`, `@capacitor/screen-orientation`, `@capacitor/splash-screen`, `@capacitor/status-bar`, `@capacitor/toast`, `@capgo/capacitor-social-login`, `@chimple/palau-recommendation`, `cordova-plugin-background-mode`, `cordova-plugin-device`, `cordova-support-android-plugin`, `cuba`, `date-fns`, `dayjs`, `@emotion/react`, `@emotion/styled`, `@ffmpeg/ffmpeg`, `@ffmpeg/util`, `firebase`, `@growthbook/growthbook-react`, `html2canvas`, `html-to-image`, `i18next`, `i18next-browser-languagedetector`, `i18next-http-backend`, `identity-obj-proxy`, `@ionic/react`, `@ionic/react-router`, `jeep-sqlite`, `leaflet`, `libphonenumber-js`, `lido-player`, `lido-standalone`, `@mui/icons-material`, `@mui/material`, `query-string`, `react-circular-progressbar`, `react-confetti`, `react-i18next`, `react-icons`, `react-international-phone`, `react-leaflet`, `react-loading-skeleton`, `react-pull-to-refresh`, `react-redux`, `react-router-dom`, `react-share`, `react-spinners`, `@reduxjs/toolkit`, `@rive-app/react-canvas`, `rive-react`, `@sentry/capacitor`, `@sentry/react`, `@splidejs/react-splide`, `styled-components`, `@supabase/supabase-js`, `uuid`, `web-vitals`, `workbox-background-sync`, `workbox-broadcast-update`, `workbox-cacheable-response`, `workbox-core`, `workbox-expiration`, `workbox-google-analytics`, `workbox-navigation-preload`, `workbox-precaching`, `workbox-routing`, `workbox-strategies`, `workbox-streams`, `xlsx-js-style`, `zip2`, `axios`, `@capacitor-community/http`, `@capacitor/device`, `@capawesome/capacitor-app-update`, `@capawesome/capacitor-live-update`, `qrcode.react`, `react-router`, `@types/pino`, `@algolia/autocomplete-plugin-query-suggestions`?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `react` connect `value` to `useKidsAppLocationAccess.test.ts`, `CompactTimePickerField.tsx`, `ProgramPageLogic.ts`, `campaignAssignmentUtils.ts`, `dependencies`, `campaignListingHelpers.ts`, `SchoolStudents.tsx`, `ActionMenu.tsx`, `.getCurrentStudent`, `SvgHelpers.ts`, `Button.stories.ts`, `.getI`, `.error`, `studentContactNumbers.ts`, `MigrateSchoolsPageLogic.ts`, `ProgramPage.test.tsx`, `.logEvent`?**
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **What connects `ns`, `supportedLngs`, `config` to the rest of the system?**
-  _1912 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `ServiceApi` be split into smaller, more focused modules?**
-  _Cohesion score 0.007326007326007326 - nodes in this community are weakly interconnected._
+  _1928 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `TableTypes` be split into smaller, more focused modules?**
+  _Cohesion score 0.009469370146678171 - nodes in this community are weakly interconnected._
 - **Should `ApiHandler` be split into smaller, more focused modules?**
-  _Cohesion score 0.00749063670411985 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.007874015748031496 - nodes in this community are weakly interconnected._
 - **Should `SupabaseApi` be split into smaller, more focused modules?**
-  _Cohesion score 0.009607614258777049 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.008930242506884843 - nodes in this community are weakly interconnected._

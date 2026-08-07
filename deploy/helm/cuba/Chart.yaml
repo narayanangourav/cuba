@@ -1,0 +1,6 @@
+apiVersion: v2
+name: cuba
+description: Helm chart for the Cuba web application
+type: application
+version: 0.1.0
+appVersion: "tooling-latest"
