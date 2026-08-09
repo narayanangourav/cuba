@@ -3,4 +3,4 @@ name: cuba
 description: Helm chart for the Cuba web application
 type: application
 version: 0.1.0
-appVersion: "2026081001"
+appVersion: "2026080902"
