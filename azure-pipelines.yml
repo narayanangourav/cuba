@@ -1,3 +1,5 @@
+name: $(Date:yyyyMMdd)$(Rev:rr)
+
 trigger:
   batch: true
   branches:
@@ -22,7 +24,7 @@ variables:
   CONTAINER_SERVICE_CONNECTION: 'ghcr-cuba'
   CONTAINER_REPOSITORY: 'narayanangourav/cuba-web'
   CONTAINER_IMAGE: 'ghcr.io/narayanangourav/cuba-web'
-  CONTAINER_TAG: '$(Build.BuildId)'
+  CONTAINER_TAG: '$(Build.BuildNumber)'
 
 stages:
   - stage: Quality
@@ -336,3 +338,116 @@ stages:
             inputs:
               command: logout
               containerRegistry: '$(CONTAINER_SERVICE_CONNECTION)'
+  
+  - stage: GitOps
+    displayName: Update GitOps desired state
+    dependsOn: Container
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/tooling'))
+
+    jobs:
+      - job: UpdateDesiredState
+        displayName: Update Cuba deployment image
+
+        pool:
+          vmImage: ubuntu-latest
+
+        steps:
+          - checkout: self
+            displayName: Checkout repository for GitOps update
+            clean: true
+            fetchDepth: 0
+            persistCredentials: true
+
+          - bash: |
+              set -euo pipefail
+
+              VALUES_FILE="deploy/helm/cuba/values.yaml"
+              CHART_FILE="deploy/helm/cuba/Chart.yaml"
+
+              echo "Build image tag: ${NEW_IMAGE_TAG}"
+              echo "Build source commit: ${SOURCE_COMMIT}"
+
+              test -f "$VALUES_FILE"
+              test -f "$CHART_FILE"
+
+              git config user.name "Azure Pipelines"
+              git config user.email "azure-pipelines@users.noreply.github.com"
+
+              echo "Fetching current tooling branch..."
+              git fetch origin tooling
+
+              REMOTE_HEAD="$(git rev-parse origin/tooling)"
+
+              echo "Pipeline source commit: ${SOURCE_COMMIT}"
+              echo "Current remote head:    ${REMOTE_HEAD}"
+
+              if [ "$REMOTE_HEAD" != "$SOURCE_COMMIT" ]; then
+                echo "The tooling branch advanced while this pipeline was running."
+                echo "Skipping this GitOps update so an older image is not deployed over newer source code."
+                exit 0
+              fi
+
+              git checkout -B tooling "$SOURCE_COMMIT"
+
+              TAG_LINE_COUNT="$(grep -c '^  tag:' "$VALUES_FILE")"
+              APP_VERSION_COUNT="$(grep -c '^appVersion:' "$CHART_FILE")"
+
+              if [ "$TAG_LINE_COUNT" -ne 1 ]; then
+                echo "Expected exactly one image tag line in $VALUES_FILE."
+                exit 1
+              fi
+
+              if [ "$APP_VERSION_COUNT" -ne 1 ]; then
+                echo "Expected exactly one appVersion line in $CHART_FILE."
+                exit 1
+              fi
+
+              sed -i -E \
+                "s|^  tag:.*|  tag: \"${NEW_IMAGE_TAG}\"|" \
+                "$VALUES_FILE"
+
+              sed -i -E \
+                "s|^appVersion:.*|appVersion: \"${NEW_IMAGE_TAG}\"|" \
+                "$CHART_FILE"
+
+              echo ""
+              echo "Updated image configuration:"
+              grep -A3 '^image:' "$VALUES_FILE"
+
+              echo ""
+              echo "Updated chart application version:"
+              grep '^appVersion:' "$CHART_FILE"
+
+              grep -q \
+                "^  tag: \"${NEW_IMAGE_TAG}\"$" \
+                "$VALUES_FILE"
+
+              grep -q \
+                "^appVersion: \"${NEW_IMAGE_TAG}\"$" \
+                "$CHART_FILE"
+
+              git diff --check
+
+              echo ""
+              echo "GitOps changes:"
+              git diff -- "$VALUES_FILE" "$CHART_FILE"
+
+              git add -- "$VALUES_FILE" "$CHART_FILE"
+
+              if git diff --cached --quiet; then
+                echo "GitOps state already references image ${NEW_IMAGE_TAG}."
+                exit 0
+              fi
+
+              git commit \
+                -m "deploy: update Cuba image to ${NEW_IMAGE_TAG} [skip ci]"
+
+              git push origin HEAD:tooling
+
+              echo ""
+              echo "GitOps update pushed successfully."
+              echo "Desired image: ghcr.io/narayanangourav/cuba-web:${NEW_IMAGE_TAG}"
+            displayName: Commit immutable image tag to GitOps configuration
+            env:
+              NEW_IMAGE_TAG: '$(CONTAINER_TAG)'
+              SOURCE_COMMIT: '$(Build.SourceVersion)'

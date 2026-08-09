@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/narayanangourav/cuba-web
-  tag: "tooling-latest"
+  tag: "2026081001"
   pullPolicy: Always
 
 imagePullSecrets: []
