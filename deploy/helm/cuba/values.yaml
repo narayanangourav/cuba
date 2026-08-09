@@ -5,8 +5,7 @@ image:
   tag: "tooling-latest"
   pullPolicy: Always
 
-imagePullSecrets:
-  - name: ghcr-pull-secret
+imagePullSecrets: []
 
 nameOverride: ""
 fullnameOverride: ""
