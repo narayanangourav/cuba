@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/narayanangourav/cuba-web
-  tag: "2026081001"
+  tag: "2026080902"
   pullPolicy: Always
 
 imagePullSecrets: []
