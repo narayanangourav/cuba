@@ -1,0 +1,69 @@
+{{- if .Values.smokeTest.enabled }}
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  generateName: {{ include "cuba.fullname" . }}-smoke-
+
+  labels:
+    {{- include "cuba.labels" . | nindent 4 }}
+
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: {{ .Values.smokeTest.activeDeadlineSeconds }}
+
+  template:
+    metadata:
+      labels:
+        {{- include "cuba.selectorLabels" . | nindent 8 }}
+
+    spec:
+      restartPolicy: Never
+      automountServiceAccountToken: false
+
+      containers:
+        - name: smoke-test
+
+          image: "{{ .Values.smokeTest.image.repository }}:{{ .Values.smokeTest.image.tag }}"
+          imagePullPolicy: {{ .Values.smokeTest.image.pullPolicy }}
+
+          command:
+            - /bin/sh
+            - -ec
+            - |
+              SERVICE_URL="http://{{ include "cuba.fullname" . }}:{{ .Values.service.port }}"
+
+              echo "Testing Cuba deployment..."
+              echo "Service: ${SERVICE_URL}"
+
+              echo "Checking health endpoint..."
+
+              HEALTH_RESPONSE="$(
+                wget \
+                  -q \
+                  -T 5 \
+                  -O - \
+                  "${SERVICE_URL}/healthz"
+              )"
+
+              echo "Health response: ${HEALTH_RESPONSE}"
+
+              if [ "${HEALTH_RESPONSE}" != "ok" ]; then
+                echo "Unexpected /healthz response."
+                exit 1
+              fi
+
+              echo "Checking application root..."
+
+              wget \
+                -q \
+                -T 5 \
+                -O /dev/null \
+                "${SERVICE_URL}/"
+
+              echo "Cuba smoke test passed."
+{{- end }}

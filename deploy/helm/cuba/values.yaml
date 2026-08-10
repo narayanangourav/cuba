@@ -44,3 +44,13 @@ resources:
     memory: 128Mi
 
 revisionHistoryLimit: 3
+
+smokeTest:
+  enabled: true
+
+  image:
+    repository: busybox
+    tag: "1.38.0"
+    pullPolicy: IfNotPresent
+
+  activeDeadlineSeconds: 60
